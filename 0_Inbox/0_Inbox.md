@@ -18,7 +18,8 @@ Y entre : tout ce qui n'a pas encore de dossier de destination évident.
 
 ## Convention de nommage
 
-`AAAA-MM-JJ-<nom-court>.md` (voir `3_Ressources/_Templates/template_capture.md`).
+`AAAA-MM-JJ-<nom-court>.md`. Une capture reste brute : un frontmatter avec `description:`, un titre,
+le contenu tel quel. La mise en forme, c'est le travail de la qualification qui suivra.
 
 ## Registry Rapide
 

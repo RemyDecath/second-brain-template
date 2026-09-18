@@ -75,8 +75,9 @@ picker and grants a narrower set, which then fails at call time. Do **not** use
 `--readonly` (breaks writes) or `--full` (asks for far more than we need).
 
 It needs `client_secret.json` in the gws config directory (`~/.config/gws/`, or
-`~/Library/Application Support/gws/` on older macOS setups). The platform
-installer writes it; if it is missing, re-run the installer.
+`~/Library/Application Support/gws/` on older macOS setups). It holds OAuth
+client credentials the user creates once in Google Cloud Console — if the file
+is missing, point them to `.agents/skills/README.md` and stop.
 
 Once the user confirms they are signed in, re-run `gws auth status` and carry on.
 

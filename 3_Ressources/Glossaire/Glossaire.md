@@ -20,7 +20,9 @@ Une entrée jamais reservie en un mois est proposée à la suppression en rétro
 
 ## Table
 
+<!-- EXEMPLE — supprimer après appropriation. -->
+
 | Terme | Définition | Catégorie | Source |
 |---|---|---|---|
-| EXEMPLE — AG | Assemblée Générale annuelle de l'association « Les Amis du Parc » | Association | Statuts de l'association |
-| EXEMPLE — IPCRA | Nom de l'indexation à 2 niveaux de ce vault : Inbox, Projets, Casquettes, Ressources, Archives | Système | `README.md` |
+| AG | Assemblée Générale annuelle de l'association « Les Amis du Parc » | Association | Statuts de l'association |
+| IPCRA | Nom de l'indexation à 2 niveaux de ce vault : Inbox, Projets, Casquettes, Ressources, Archives | Système | `README.md` |

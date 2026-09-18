@@ -1,8 +1,9 @@
-<!-- EXEMPLE — supprimer après appropriation -->
 ---
 description: Refonte du site vitrine de l'association « Les Amis du Parc », à livrer avant l'AG.
 created_date: 2024-11-03
 ---
+
+<!-- EXEMPLE — supprimer après appropriation. -->
 
 # EXEMPLE_Projet
 

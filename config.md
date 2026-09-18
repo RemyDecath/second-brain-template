@@ -51,7 +51,7 @@ de gouvernance d'écriture R9) :
 
 ## 7. Outils externes branchés
 
-| Outil | Lecture | Action directe | Accord obligatoire |
+| Outil | Ce qu'il peut lire | Action directe, sans demander | Accord obligatoire |
 |---|---|---|---|
-| `google-workspace` | Docs, Slides, Sheets, Calendar | Lecture et export de fichiers | Toute action d'écriture (création, modification, envoi) |
+| `google-workspace` | Docs, Slides, Sheets, Gmail, Calendar | Export local d'un fichier vers un dossier temporaire | Toute écriture chez Google : création, modification, envoi, partage |
 | `<autre outil>` | `<ce qu'il peut lire>` | `<ce qu'il peut faire seul>` | `<ce qui nécessite ton accord>` |

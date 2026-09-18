@@ -1,8 +1,9 @@
-<!-- EXEMPLE — supprimer après appropriation -->
 ---
 description: Trésorier de l'association « Les Amis du Parc » — rôle permanent, sans date de fin.
 created_date: 2024-09-01
 ---
+
+<!-- EXEMPLE — supprimer après appropriation. -->
 
 # EXEMPLE_Casquette
 

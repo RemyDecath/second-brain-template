@@ -23,7 +23,8 @@ created_date: <AAAA-MM-JJ>
 la revue hebdomadaire.
 
 1. Repérer les répétitions ayant atteint 3 occurrences (candidates à une règle ou une skill, R8).
-2. Repérer les templates jamais utilisés depuis leur création.
+2. Purger le glossaire : proposer à la suppression les entrées jamais reservies depuis un mois
+   (`3_Ressources/Glossaire/Glossaire.md`).
 3. Repérer les règles du socle jamais déclenchées.
 4. Repérer les outils externes sans usage réel sur le mois (voir `config.md` §7).
 5. Relire les frictions du journal du mois écoulé : une friction récurrente révèle-t-elle une règle

@@ -17,6 +17,8 @@ sans jamais l'ajouter seul au socle. Une règle réutilisable ou une skill ne s'
 
 ## Table
 
+<!-- EXEMPLE — supprimer après appropriation. -->
+
 | Date | Constat (nb d'occurrences) | Proposition | Statut |
 |---|---|---|---|
-| EXEMPLE 2025-01-20 | Question posée 2 fois sur le format de date des captures | Ajouter la convention dans `template_capture.md` | proposé |
+| 2025-01-20 | Question posée 2 fois sur le format de date des captures | Inscrire la convention de nommage dans `0_Inbox/0_Inbox.md` | proposé |

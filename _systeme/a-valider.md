@@ -13,10 +13,12 @@ Traité à la revue hebdomadaire (`_systeme/routines.md`).
 
 <!-- - [ ] cible — proposition [AAAA-MM-JJ, source] -->
 
-- [ ] EXEMPLE 1_Projets/EXEMPLE_Projet/EXEMPLE_Projet.md — ajouter un fait déduit d'un échange informel [2025-01-18, conversation Slack]
+<!-- EXEMPLE — supprimer après appropriation. -->
+- [ ] 1_Projets/EXEMPLE_Projet/EXEMPLE_Projet.md — ajouter un fait déduit d'un échange informel [2025-01-18, conversation Slack]
 
 ## Jetés
 
 Conservé pour ne pas reproposer deux fois la même chose.
 
-- EXEMPLE — supposition sur une échéance non confirmée, écartée le 2025-01-19.
+<!-- EXEMPLE — supprimer après appropriation. -->
+- Supposition sur une échéance non confirmée, écartée le 2025-01-19.

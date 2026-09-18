@@ -1,8 +1,9 @@
 # .copilotignore — exclut ces chemins du contexte lu automatiquement par l'agent.
-# Les éléments archivés ne doivent pas peser sur chaque conversation : on y range, on n'y lit pas.
-4_Archives/**
-# Les templates sont des squelettes, pas du contenu à interpréter : inutiles au routage courant.
-3_Ressources/_Templates/**
+# N'y mettre que ce que l'agent ne doit JAMAIS lire : l'exclusion est binaire, elle bloque
+# aussi les lectures que tu demandes explicitement.
+# Le contenu archivé ne doit pas peser sur chaque conversation : on y range, on n'y lit pas.
+# Le hub reste lisible — c'est lui qui dit ce qui a été archivé et où.
+4_Archives/*/**
 # Configuration et cache Obsidian : jamais pertinents pour l'agent.
 .obsidian/**
 # Métadonnées git : jamais pertinentes pour l'agent.

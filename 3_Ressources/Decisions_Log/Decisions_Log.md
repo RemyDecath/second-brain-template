@@ -17,6 +17,8 @@ la forme du système (R7).
 
 ## Table
 
+<!-- EXEMPLE — supprimer après appropriation. -->
+
 | Date | Décision | Contexte / Parties prenantes | Source |
 |---|---|---|---|
-| EXEMPLE 2025-01-12 | Reporter la mise en ligne du nouveau site vitrine après l'AG annuelle | Association « Les Amis du Parc » — le comité veut le présenter aux adhérents avant publication | Réunion de bureau, 2025-01-12 |
+| 2025-01-12 | Reporter la mise en ligne du nouveau site vitrine après l'AG annuelle | Association « Les Amis du Parc » — le comité veut le présenter aux adhérents avant publication | Réunion de bureau, 2025-01-12 |

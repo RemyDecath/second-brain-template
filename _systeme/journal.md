@@ -25,7 +25,9 @@ outils, conventions). Jamais de contenu métier — pour ça, voir `3_Ressources
 
 ## Entrées
 
-## EXEMPLE 2025-01-08 — Extraction de « Suivi_Cotisations » hors de la casquette Trésorerie
+<!-- EXEMPLE — supprimer après appropriation. -->
+
+## 2025-01-08 — Extraction de « Suivi_Cotisations » hors de la casquette Trésorerie
 
 **Décision** : Le suivi des cotisations des adhérents est extrait de la note de contexte
 `EXEMPLE_Casquette.md` vers une note atomique dédiée.

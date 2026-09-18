@@ -59,12 +59,20 @@ que soit la source.
 Toute capture brute entre par `0_Inbox/`. `0_Inbox/TEMP/` est réservé au travail jetable, vidé après
 traitement.
 
-## 10. Conventions Obsidian
+## 10. Création de note
+
+Aucun gabarit n'est imposé : structure la note comme le sujet l'exige. Une seule contrainte, tout
+fichier de contenu commence par un frontmatter — bloc `---` en **première ligne**, rien au-dessus —
+avec une `description:` d'une phrase ; la revue hebdo régénère les registries à partir d'elle. Pour
+la forme attendue d'un hub, d'une note de contexte ou d'un nouveau dossier, renvoie à
+`3_Ressources/Pattern_Extensibilite/Pattern_Extensibilite.md`.
+
+## 11. Conventions Obsidian
 
 Frontmatter YAML minimal (`description`, `created_date`), wikilinks `[[Nom]]`, lisibilité conservée
 en Markdown brut même sans plugin.
 
-## 11. Skills
+## 12. Skills
 
 Avant d'improviser une procédure récurrente, regarde `.agents/skills/`. La skill
 `google-workspace` (optionnelle) donne accès à Docs, Sheets, Slides, Gmail et Calendar via le CLI

@@ -1,24 +1,24 @@
 ---
-description: Ressources — contenu réutilisable et transverse (glossaire, décisions, templates).
+description: Ressources — contenu réutilisable et transverse (glossaire, décisions, conventions).
 created_date: <AAAA-MM-JJ>
 ---
 
 # 3_Ressources
 
 Contient ce qui sert à plusieurs projets ou casquettes à la fois : glossaire, journal des décisions
-métier, templates de création de note. Y entre : tout contenu de référence, pas d'action en cours.
+métier, conventions de structure. Y entre : tout contenu de référence, pas d'action en cours.
 
 ## Périmètre
 
-- **On y range** : définitions, décisions transverses, gabarits de fichiers.
+- **On y range** : définitions, décisions transverses, conventions du système.
 - **On n'y range pas** : un projet ou une casquette en cours (→ dossiers dédiés), du contenu
   archivé et inactif (→ `4_Archives/`).
 
 ## Convention de nommage
 
 Un sous-dossier par type de ressource, avec sa note de contexte homonyme :
-`Glossaire/Glossaire.md`, `Decisions_Log/Decisions_Log.md`, `_Templates/` (préfixe `_` = hors
-routage IA, listé dans `.copilotignore`).
+`Glossaire/Glossaire.md`, `Decisions_Log/Decisions_Log.md`,
+`Pattern_Extensibilite/Pattern_Extensibilite.md`.
 
 ## Registry Rapide
 
@@ -26,7 +26,7 @@ routage IA, listé dans `.copilotignore`).
 |---|---|---|
 | Glossaire | Termes et acronymes du domaine | 3_Ressources/Glossaire/Glossaire.md |
 | Decisions_Log | Décisions métier, table chronologique | 3_Ressources/Decisions_Log/Decisions_Log.md |
-| _Templates | Gabarits de création de note | 3_Ressources/_Templates/ |
+| Pattern_Extensibilite | Forme attendue d'un dossier et d'une note | 3_Ressources/Pattern_Extensibilite/Pattern_Extensibilite.md |
 
 ## Règle de sortie
 

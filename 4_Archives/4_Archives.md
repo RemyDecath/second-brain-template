@@ -27,5 +27,7 @@ On conserve le nom et la structure d'origine du dossier déplacé, sans renommag
 
 ## Règle de sortie
 
-`4_Archives/` sort du contexte IA via `.copilotignore` (R12) : l'agent n'y lit pas par défaut. Un
-élément n'en ressort que sur demande explicite (réactivation d'un projet, par exemple).
+Le contenu de `4_Archives/` sort du contexte IA via `.copilotignore` (R12) : l'agent lit ce hub — il
+lui dit ce qui a été archivé et où — mais pas les dossiers archivés eux-mêmes. Un élément n'en
+ressort que sur demande explicite (réactivation d'un projet, par exemple), en le déplaçant hors de
+`4_Archives/`.

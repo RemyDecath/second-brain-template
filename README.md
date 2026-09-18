@@ -29,7 +29,7 @@ Les 5 dossiers (méthode IPCRA) :
 | `0_Inbox/` | Capture brute, non qualifiée |
 | `1_Projets/` | Engagements avec une date de fin |
 | `2_Casquettes/` | Rôles permanents, sans date de fin |
-| `3_Ressources/` | Réutilisable et transverse (glossaire, décisions, templates) |
+| `3_Ressources/` | Réutilisable et transverse (glossaire, décisions, conventions) |
 | `4_Archives/` | Terminé ou inactif, hors contexte IA |
 
 ## Démarrage
@@ -37,15 +37,15 @@ Les 5 dossiers (méthode IPCRA) :
 1. Cloner ce dépôt.
 2. L'ouvrir comme vault dans Obsidian.
 3. Remplir `config.md` (identité, casquettes, ton, périmètre sensible, outils branchés).
-4. Créer ta première casquette en suivant `3_Ressources/_Templates/PATTERN_EXTENSIBILITE.md`.
+4. Créer ta première casquette en suivant
+   `3_Ressources/Pattern_Extensibilite/Pattern_Extensibilite.md`.
 5. Supprimer les fichiers d'exemple (voir ci-dessous).
 
 ## Fichiers d'exemple à supprimer
 
 Une histoire fictive minimale (une association, un trésorier, un projet de refonte de site) illustre
-le système : `1_Projets/EXEMPLE_Projet/`, `2_Casquettes/EXEMPLE_Casquette/`, et les lignes
-`EXEMPLE` dans `Glossaire.md`, `Decisions_Log.md` et `_systeme/journal.md`. Chaque fichier porte
-l'en-tête `<!-- EXEMPLE — supprimer après appropriation -->`.
+le système. Elle tient en deux dossiers `EXEMPLE_*` et en quelques lignes de tableau, toutes
+précédées du marqueur `<!-- EXEMPLE — supprimer après appropriation. -->`.
 
 Suppression des dossiers d'exemple, une fois le système approprié :
 
@@ -53,9 +53,11 @@ Suppression des dossiers d'exemple, une fois le système approprié :
 rm -rf 1_Projets/EXEMPLE_Projet 2_Casquettes/EXEMPLE_Casquette
 ```
 
-Retire ensuite leurs lignes des registries de `1_Projets/1_Projets.md` et
-`2_Casquettes/2_Casquettes.md`, et les lignes `EXEMPLE` dans `Glossaire.md`, `Decisions_Log.md` et
-`_systeme/journal.md`.
+Puis repérer les lignes restantes et les retirer avec leur marqueur :
+
+```bash
+grep -rn 'EXEMPLE — supprimer' --include='*.md' .
+```
 
 ## La skill `google-workspace`
 
@@ -66,7 +68,9 @@ Prérequis, usage et commande de suppression : `.agents/skills/README.md` et
 ## Étendre le système
 
 Pour ajouter une nouvelle branche (dossier de premier niveau ou sous-dossier), suis
-`3_Ressources/_Templates/PATTERN_EXTENSIBILITE.md`.
+`3_Ressources/Pattern_Extensibilite/Pattern_Extensibilite.md`. Aucun gabarit n'est imposé : la
+seule contrainte est un frontmatter avec une `description:` en première ligne de chaque fichier de
+contenu, dont dépend la régénération des registries.
 
 ## Plafonds
 

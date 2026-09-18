@@ -17,12 +17,11 @@ relève d'une responsabilité durable, sans échéance de clôture.
 ## Convention de nommage
 
 `NomCasquette/NomCasquette.md` pour la note de contexte ; les notes atomiques qui en débordent vivent
-dans le même dossier (R4, voir `PATTERN_EXTENSIBILITE.md`).
+dans le même dossier (R4, voir `3_Ressources/Pattern_Extensibilite/Pattern_Extensibilite.md`).
 
 ## Registry Rapide
 
-<!-- Une ligne par casquette active. Exemple : -->
-<!-- | EXEMPLE_Casquette | Rôle permanent fictif | 2_Casquettes/EXEMPLE_Casquette/EXEMPLE_Casquette.md | -->
+<!-- EXEMPLE — supprimer après appropriation. -->
 
 | Élément | Description | Chemin |
 |---|---|---|

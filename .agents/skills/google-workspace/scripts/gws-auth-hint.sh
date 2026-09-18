@@ -56,7 +56,8 @@ gws_auth_hint() {
     if [ ! -f "${dir}/client_secret.json" ]; then
         {
             echo "  → No OAuth client at ${dir}/client_secret.json —"
-            echo "     re-run the Google Workspace CLI installer to write it,"
+            echo "     create OAuth client credentials in Google Cloud Console"
+            echo "     and save them there (see .agents/skills/README.md),"
             echo "     then sign in with the command below."
         } >&2
     fi

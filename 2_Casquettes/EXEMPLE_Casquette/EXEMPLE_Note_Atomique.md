@@ -1,8 +1,9 @@
-<!-- EXEMPLE — supprimer après appropriation -->
 ---
 description: Suivi détaillé des cotisations des adhérents de l'association « Les Amis du Parc ».
 created_date: 2025-01-08
 ---
+
+<!-- EXEMPLE — supprimer après appropriation. -->
 
 # EXEMPLE_Note_Atomique — Suivi_Cotisations
 

@@ -20,8 +20,7 @@ prévue, et un objectif précis. Y entre : tout nouveau projet dès qu'il est ca
 
 ## Registry Rapide
 
-<!-- Une ligne par projet actif. Exemple : -->
-<!-- | EXEMPLE_Projet | Migration du site vitrine | 1_Projets/EXEMPLE_Projet/EXEMPLE_Projet.md | -->
+<!-- EXEMPLE — supprimer après appropriation. -->
 
 | Élément | Description | Chemin |
 |---|---|---|
