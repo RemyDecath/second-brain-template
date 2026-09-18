@@ -27,8 +27,8 @@ la revue hebdomadaire.
    (`3_Ressources/Glossaire/Glossaire.md`).
 3. Repérer les règles du socle jamais déclenchées.
 4. Repérer les outils externes sans usage réel sur le mois (voir `config.md` §7).
-5. Relire les frictions du journal du mois écoulé : une friction récurrente révèle-t-elle une règle
-   mal formulée ?
+5. Relire toutes les décisions, évolutions et frictions du journal du mois écoulé : une répétition
+   révèle-t-elle une règle mal formulée, une convention à clarifier ou une amélioration à proposer ?
 6. Arbitrer chaque ligne de `_systeme/ameliorations.md`.
 
 Sortie : pour chaque point, une décision **Garder / Supprimer / Reformuler**, soumise à ton accord.
