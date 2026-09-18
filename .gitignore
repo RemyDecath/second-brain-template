@@ -1,0 +1,5 @@
+# Configuration locale du plugin Obsidian : propre à chaque poste, jamais versionnée.
+.obsidian/
+# Fichiers système macOS.
+.DS_Store
+._*
