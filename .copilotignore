@@ -1,10 +1,31 @@
 # .copilotignore — exclut ces chemins du contexte lu automatiquement par l'agent.
 # N'y mettre que ce que l'agent ne doit JAMAIS lire : l'exclusion est binaire, elle bloque
-# aussi les lectures que tu demandes explicitement.
+# aussi les lectures que tu demandes explicitement. La négation (!) n'est pas supportée.
+#
+# Ce fichier est une optimisation, pas une garantie : son support dépend de l'application.
+# Les règles vraiment importantes sont doublées dans `.github/copilot-instructions.md`, que
+# l'agent lit toujours (voir sa section 10 pour les archives).
+
 # Le contenu archivé ne doit pas peser sur chaque conversation : on y range, on n'y lit pas.
-# Le hub reste lisible — c'est lui qui dit ce qui a été archivé et où.
+# Le motif ne couvre que les SOUS-DOSSIERS — d'où la règle « tout archivé va dans un
+# sous-dossier » (socle §10). Le hub `4_Archives/4_Archives.md` reste lisible : c'est lui qui
+# dit ce qui a été archivé et où.
 4_Archives/*/**
+
+# Tutoriel et exemples : écrits pour l'humain, sans valeur pour l'agent, et truffés de blocs
+# de prompts qu'il pourrait confondre avec des instructions.
+docs/**
+
+# Journaux système clos : conservés pour l'historique, jamais relus au quotidien.
+# `_systeme/journal.md` (le mois en cours) reste lisible.
+_systeme/journal/**
+
 # Configuration et cache Obsidian : jamais pertinents pour l'agent.
 .obsidian/**
+
 # Métadonnées git : jamais pertinentes pour l'agent.
 .git/**
+
+# Artefacts de synchronisation Google Drive : transitoires, jamais du contenu.
+.tmp.drivedownload/**
+.tmp.driveupload/**

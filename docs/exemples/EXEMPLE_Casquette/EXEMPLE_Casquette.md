@@ -1,9 +1,10 @@
 ---
 description: Trésorier de l'association « Les Amis du Parc » — rôle permanent, sans date de fin.
 created_date: 2024-09-01
+status: actif
 ---
 
-<!-- EXEMPLE — supprimer après appropriation. -->
+<!-- EXEMPLE de référence — hors du contexte de l'agent, à lire comme modèle. Ne pas copier tel quel. -->
 
 # EXEMPLE_Casquette
 

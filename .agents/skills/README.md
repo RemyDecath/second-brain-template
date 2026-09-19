@@ -2,7 +2,7 @@
 
 Une skill est un mode d'emploi outillé, écrit pour l'agent, quand une tâche redevient récurrente.
 
-## Règle d'écriture (R8)
+## Règle d'écriture
 
 Une skill ne s'écrit qu'à la **3e répétition réelle** d'une tâche — jamais par anticipation « au
 cas où ». Avant la 3e répétition, la proposition passe par `_systeme/ameliorations.md`.
@@ -38,4 +38,5 @@ puis un fichier `client_secret.json` (identifiants OAuth Google Cloud, à créer
 rm -rf .agents/skills/google-workspace
 ```
 
-Puis retire la ligne d'aiguillage correspondante dans `.github/copilot-instructions.md`.
+Puis retire la ligne d'aiguillage correspondante dans `.github/copilot-instructions.md`
+(section 12).

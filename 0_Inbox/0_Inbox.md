@@ -1,6 +1,6 @@
 ---
 description: Boîte de réception — capture brute, non qualifiée, à traiter.
-created_date: <AAAA-MM-JJ>
+created_date: 2026-09-18
 ---
 
 # 0_Inbox
@@ -10,7 +10,7 @@ Y entre : tout ce qui n'a pas encore de dossier de destination évident.
 
 ## Périmètre
 
-- **On y range** : captures du quotidien, en attente de qualification (R10).
+- **On y range** : captures du quotidien, en attente de qualification.
 - **On n'y range pas** : ce qui a déjà une destination claire (projet, casquette, ressource) — le
   déposer directement à la bonne place.
 - `TEMP/` est réservé au travail jetable : son contenu est supprimé après traitement, jamais versionné

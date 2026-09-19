@@ -1,9 +1,10 @@
 ---
 description: Refonte du site vitrine de l'association « Les Amis du Parc », à livrer avant l'AG.
 created_date: 2024-11-03
+status: actif
 ---
 
-<!-- EXEMPLE — supprimer après appropriation. -->
+<!-- EXEMPLE de référence — hors du contexte de l'agent, à lire comme modèle. Ne pas copier tel quel. -->
 
 # EXEMPLE_Projet
 
@@ -18,8 +19,8 @@ Maquette validée par le bureau ; contenu des pages en cours de rédaction.
 ## Faits datés et sourcés
 
 - fait [2024-11-03, réunion de bureau] : validation de la maquette.
-- fait [2025-01-12, réunion de bureau] : mise en ligne reportée après l'AG (voir
-  `3_Ressources/Decisions_Log/Decisions_Log.md`).
+- fait [2025-01-12, réunion de bureau] : mise en ligne reportée après l'AG — la décision est
+  consignée en parallèle dans `3_Ressources/Decisions_Log/Decisions_Log.md`.
 
 ## Points d'attention
 

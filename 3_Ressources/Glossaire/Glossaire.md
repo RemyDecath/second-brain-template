@@ -1,6 +1,6 @@
 ---
 description: Termes et acronymes du domaine — à consulter avant d'interpréter un terme inconnu.
-created_date: <AAAA-MM-JJ>
+created_date: 2026-09-18
 ---
 
 # Glossaire
@@ -18,11 +18,14 @@ interprétations erronées.
 
 Une entrée jamais reservie en un mois est proposée à la suppression en rétro mensuelle.
 
-## Table
+## Partition
 
-<!-- EXEMPLE — supprimer après appropriation. -->
+Le plafond de `config.md §5` ne compte pas les lignes de table. Quand le glossaire devient
+difficile à parcourir, on le partitionne par initiale (`Glossaire/A-F.md`, `G-M.md`, …) et ce
+fichier devient le hub qui pointe vers les partitions. On ne l'extrait jamais en note atomique.
+
+## Table
 
 | Terme | Définition | Catégorie | Source |
 |---|---|---|---|
-| AG | Assemblée Générale annuelle de l'association « Les Amis du Parc » | Association | Statuts de l'association |
-| IPCRA | Nom de l'indexation à 2 niveaux de ce vault : Inbox, Projets, Casquettes, Ressources, Archives | Système | `README.md` |
+| IPCRA | Les 5 dossiers de ce vault : Inbox, Projets, Casquettes, Ressources, Archives | Système | `docs/TUTORIEL.md` |

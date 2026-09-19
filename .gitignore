@@ -3,3 +3,8 @@
 # Fichiers système macOS.
 .DS_Store
 ._*
+
+# Artefacts de synchronisation Google Drive pour ordinateur.
+.tmp.drivedownload/
+.tmp.driveupload/
+desktop.ini

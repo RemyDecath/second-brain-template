@@ -3,11 +3,11 @@ description: Suivi détaillé des cotisations des adhérents de l'association «
 created_date: 2025-01-08
 ---
 
-<!-- EXEMPLE — supprimer après appropriation. -->
+<!-- EXEMPLE de référence — hors du contexte de l'agent, à lire comme modèle. Ne pas copier tel quel. -->
 
 # EXEMPLE_Note_Atomique — Suivi_Cotisations
 
-Détail extrait de [[EXEMPLE_Casquette]] (débordement du plafond de 80 lignes, R4) : suivi
+Détail extrait de [[EXEMPLE_Casquette]] (débordement du plafond de 80 lignes) : suivi
 nominatif des cotisations de l'année en cours.
 
 - Cotisation annuelle : 20 € (tarif plein), 10 € (tarif réduit).

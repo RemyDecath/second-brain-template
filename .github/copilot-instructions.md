@@ -1,112 +1,141 @@
 ---
-created_date: 2026-09-18 16:32:01
+description: Socle de règles de travail de l'agent dans ce second brain — lu à chaque session.
+created_date: 2026-09-18
 ---
 # Instructions Copilot — Second Brain
 
-Ce dépôt est un second brain personnel organisé en 5 dossiers (méthode IPCRA) :
-`0_Inbox` capture le brut · `1_Projets` a des dates de fin · `2_Casquettes` sont des rôles
-permanents · `3_Ressources` est réutilisable et transverse · `4_Archives` est terminé ou inactif.
+Second brain personnel en 5 dossiers (IPCRA) : `0_Inbox` capture le brut · `1_Projets` a des dates
+de fin · `2_Casquettes` sont des rôles permanents · `3_Ressources` est réutilisable et transverse ·
+`4_Archives` est terminé ou inactif. `_systeme/` porte le fonctionnement du système ; `docs/`
+s'adresse à l'humain et sort de ton contexte, renvoies-y par un chemin seulement.
 
 ## 1. Lire `config.md` en premier
 
-En début de session, lis `config.md` : identité, casquettes actives, ton attendu, périmètre
-sensible (R9) et outils externes branchés. Il rend ce socle générique.
+En début de session : identité, casquettes, ton, conventions, plafonds, périmètre sensible, outils.
 
 ## 2. Routage : hub → registry → cible
 
-Pour toute demande, identifie le dossier IPCRA concerné, lis son hub homonyme
-(`0_Inbox/0_Inbox.md`, `1_Projets/1_Projets.md`, `2_Casquettes/2_Casquettes.md`,
-`3_Ressources/3_Ressources.md`, `4_Archives/4_Archives.md`), utilise son **Registry Rapide** pour
-trouver le chemin exact, puis accède directement à la cible. Chaque dossier important a sa note de
-contexte homonyme (`Projet_X/Projet_X.md`) — c'est elle qu'on lit, jamais le dossier. Ce routage est
-interne et obligatoire : l'utilisateur n'a pas à le demander dans son prompt.
+Pour toute demande, identifie le dossier IPCRA concerné et lis son hub homonyme — tout dossier a sa
+note homonyme (`X/X.md`), c'est elle qu'on lit, jamais le dossier. Utilise son **Registry Rapide**
+pour trouver le chemin exact, puis va directement à la cible.
 
 Après toute création, qualification, transformation, déplacement, renommage, archivage ou
-suppression, mets à jour tous les Registry Rapide concernés, retire les chemins devenus obsolètes,
-préserve ou répare les wikilinks et vérifie les chemins. Ces mises à jour font partie de l'opération
-par défaut ; ne demande pas à l'utilisateur de les rappeler.
-
-Après toute écriture, fournis un résumé concis des fichiers et des changements effectués. Pour une
-réponse fondée sur le vault, cite le chemin de la note source. Ces informations sont fournies par
-défaut, sans demande particulière de l'utilisateur.
+suppression : mets à jour les Registry Rapide concernés, retire les chemins obsolètes, répare les
+wikilinks. Après toute écriture, résume les changements ; pour une réponse fondée sur le vault, cite
+la note source. Tout ceci est natif : l'utilisateur n'a pas à le demander dans son prompt.
 
 ## 3. Sobriété
 
 Arrête-toi dès que la réponse est déterminable au niveau courant. N'ouvre une source secondaire
-qu'en cas de donnée manquante, contradiction, ambiguïté réelle ou demande explicite de recoupement.
-Aucune exploration à l'aveugle (`find`/`ls` global) quand un registry existe.
+qu'en cas de donnée manquante, contradiction, ambiguïté réelle ou demande de recoupement. Aucune
+exploration à l'aveugle (`find`/`ls` global) quand un registry existe. Deux exceptions :
+
+- **Régénérer un registry** (revue hebdo) : découvrir ce qui manque suppose de parcourir. Reste dans
+  la seule branche concernée et ne lis que le frontmatter, jamais le corps des notes :
+  `grep -r -m1 -H '^description:' <branche>/ --include='*.md'`
+- **Chemin de registry introuvable** : le registry est périmé. Même parcours, limité à cette
+  branche ; corrige la ligne et signale l'écart dans ton résumé.
+
+Un Registry Rapide est un index régénérable, jamais la source de vérité : quand il contredit le
+système de fichiers, c'est lui qui a tort.
+
+**Budget : 5 fichiers ouverts au maximum par réponse** — au-delà, dis-le et demande. Cherche avant
+d'ouvrir (`grep`) ; sur un fichier de plus de 200 lignes, lis la plage utile, jamais l'intégralité.
 
 ## 4. Plafonds
 
-`copilot-instructions.md` < 120 lignes · hub et note de contexte < 80 · note atomique < 150. Au
-dépassement, propose d'extraire le thème qui domine dans une note atomique — jamais d'extension,
-jamais d'extraction sans accord.
+Valeurs dans `config.md §5` — lis-les là, ne les recopie pas ici.
+
+Un plafond protège ton contexte. Il s'impose quand un fichier est **lu en entier** *et* **croît
+sans borne propre** : socle, `config.md`, `README.md`, hub, note de contexte, note atomique,
+capture, procédure. Il ne s'impose pas dès que l'une des deux conditions manque — un journal ou une
+table se consulte par extrait, une file d'attente se lit en entier mais se vide en routine. Ne
+signale jamais de dépassement sur ces fichiers-là, et ne compte pas les lignes de table dans le
+fichier qui les porte.
+
+Dépassement en prose → extraire le thème dominant en note atomique. Table devenue illisible → ne pas
+l'extraire mais la **partitionner** selon son axe naturel (glossaire par initiale, décisions par
+année → `Decisions_Log/2026.md`), le parent devenant un hub vers ses partitions. Jamais d'extension
+du plafond, ni d'extraction ou de partition sans accord.
 
 ## 5. Glossaire
 
-Avant d'interpréter un acronyme ou un terme spécifique, consulte
-`3_Ressources/Glossaire/Glossaire.md`. Terme absent ou ambigu → demande, ne devine pas. Après
-clarification, mets à jour l'entrée.
+Avant d'interpréter un acronyme, consulte `3_Ressources/Glossaire/Glossaire.md`. Terme absent ou
+ambigu → demande, ne devine pas. Après clarification, mets à jour l'entrée.
 
 ## 6. Journal système et routines
 
-Toute décision, arbitrage ou évolution sur le fonctionnement du second brain va dans
-`_systeme/journal.md` : organisation, règles, workflows, conventions, outils, intégrations et
-gouvernance. Les frictions d'usage y sont conservées, mais ne limitent pas son périmètre. Quand une
-conversation aboutit à une décision système explicite, consigne-la dans ce journal avant de
-terminer, même si aucune friction n'est à l'origine de la décision. Les décisions métier vont dans
-`3_Ressources/Decisions_Log/`.
+Toute décision, arbitrage ou évolution sur le **fonctionnement** du second brain (organisation,
+règles, workflows, conventions, outils, gouvernance) va dans `_systeme/journal.md` avant de terminer
+la conversation. Les décisions **métier** vont dans `3_Ressources/Decisions_Log/`.
 
-Les procédures d'entretien (revue hebdo, rétro mensuelle) sont dans `_systeme/routines.md` — ne les
-recopie pas ici, renvoie-y. Quand l'utilisateur demande une revue hebdomadaire ou une rétro
-mensuelle, lis cette note et applique sa checklist complète sans attendre qu'il la recopie. Commence
-par un diagnostic sans écriture, présente les décisions, puis attends un accord explicite avant
-d'appliquer les changements.
+Consigne aussi les **frictions**, au moment où elles se produisent et même sans décision à la clé :
+une question qu'il a fallu reposer, une consigne répétée, une règle qui a gêné, une erreur de ta
+part qui a été corrigée. Une friction non écrite est perdue — or c'est elle qui alimente le comptage
+des répétitions (voir « Amélioration continue ») et la rétro mensuelle. Ne la garde pas pour la fin : écris-la quand elle
+survient.
+
+Chaque entrée commence par `### AAAA-MM-JJ — <type> — <sujet>`, `<type>` valant `décision`,
+`friction`, `revue` ou `incident`. C'est ce qui rend le journal filtrable par les routines.
+
+Les procédures d'entretien sont dans `_systeme/routines.md` — ne les recopie pas ici, renvoie-y.
+Revue hebdo ou rétro mensuelle demandée → lis cette note et applique sa checklist complète sans
+attendre qu'elle soit recopiée.
 
 ## 7. Amélioration continue
 
-Même question ou même correction posée 2 fois → propose une ligne dans
-`_systeme/ameliorations.md`, sans jamais l'ajouter seul au socle. Règle ou skill : seulement après
-la 3e répétition réelle.
+Le comptage n'est pas une impression, il se vérifie. Avant de proposer quoi que ce soit, cherche une
+friction antérieure sur le même sujet : `grep -n 'friction' _systeme/journal.md`.
+
+- **1re occurrence** → une entrée `friction` dans le journal, rien d'autre.
+- **2e occurrence** → une ligne dans `_systeme/ameliorations.md`, avec le nombre d'occurrences et la
+  date de la première. Jamais d'ajout au socle à ce stade.
+- **3e occurrence réelle** → alors seulement, une règle ou une skill peut s'écrire, après accord.
+
+Jamais par anticipation, jamais au-delà de ce que les occurrences constatées justifient.
 
 ## 8. Gouvernance d'écriture
 
-Un *constat* (énoncé en direct par l'utilisateur, terme relevé, registry régénéré) s'écrit
-directement. Une *inférence* (déduite d'un corpus, d'un message, d'un outil externe) passe par
-`_systeme/a-valider.md`. Ce que `config.md` déclare sensible ne s'écrit jamais dans le vault, quelle
-que soit la source. Lors d'une reformulation, conserve par défaut le frontmatter, les dates, les
-faits, les sources et les wikilinks ; ne change que ce qui est demandé.
+Un *constat* (énoncé en direct, terme relevé, registry régénéré) s'écrit directement. Une
+*inférence* (déduite d'un corpus, d'un message, d'un outil externe) passe par
+`_systeme/a-valider.md`. Ce que `config.md §6` déclare sensible ne s'écrit **jamais** dans le vault.
+En reformulant, conserve frontmatter, dates, faits, sources et wikilinks ; ne change rien d'autre.
+
+Un fait a un seul domicile : ne recopie pas le contenu d'une note dans une autre, mets un wikilink.
 
 ## 9. Inbox et TEMP
 
-Toute capture brute entre par `0_Inbox/`. `0_Inbox/TEMP/` est réservé au travail jetable, vidé après
-traitement. Lorsqu'une capture est qualifiée, déplace-la ou transforme-la vers la branche cible,
-retire-la de l'Inbox et mets à jour les registries source et cible dans la même opération.
+Toute capture brute entre par `0_Inbox/` ; `0_Inbox/TEMP/` est jetable, vidé après traitement. Une
+capture qualifiée part vers sa branche cible, quitte l'Inbox, et les deux registries sont mis à jour
+dans la même opération.
 
-## 10. Création de note
+## 10. Archives
 
-Aucun gabarit n'est imposé : structure la note comme le sujet l'exige. Une seule contrainte, tout
-fichier de contenu commence par un frontmatter — bloc `---` en **première ligne**, rien au-dessus —
-avec une `description:` d'une phrase ; la revue hebdo régénère les registries à partir d'elle.
+`4_Archives/` est exclu de ton contexte par `.copilotignore`, mais ne compte pas dessus : **ne lis
+jamais un fichier de `4_Archives/` autre que son hub**. Le hub dit ce qui a été archivé et où, cela
+suffit. Tout élément archivé va dans un **sous-dossier**, jamais en fichier isolé à la racine que
+l'exclusion ne couvre pas ; il n'en ressort que sur demande explicite, déplacé avant d'être lu.
 
-Avant toute création d'un dossier, d'un hub, d'une note de contexte ou d'une note atomique, lis
-systématiquement le hub parent et `3_Ressources/Pattern_Extensibilite/Pattern_Extensibilite.md`.
-Cette lecture et l'application du pattern sont obligatoires par défaut : l'utilisateur n'a pas à
-les demander dans son prompt. Pour une modification structurelle d'un contenu existant, applique
-la même règle avant d'agir. Respecte ensuite la forme attendue et mets à jour le Registry Rapide
-concerné.
+## 11. Création de note
 
-Lorsqu'un contrôle de démarrage est demandé, vérifie au minimum les placeholders de `config.md`, les
-Registry Rapide, les frontmatter, les captures de `0_Inbox/`, le contenu temporaire et les exemples
-fictifs. Le contrôle est d'abord un diagnostic ; n'écris qu'après accord explicite.
+Aucun gabarit imposé : structure la note comme le sujet l'exige. Une seule contrainte, tout fichier
+de contenu commence par un frontmatter — bloc `---` en **première ligne**, rien au-dessus — avec une
+`description:` d'une phrase, dont la revue hebdo régénère les registries. Frontmatter minimal
+(`description`, `created_date`), wikilinks `[[Nom]]`, lisibilité conservée en Markdown brut.
 
-## 11. Conventions Obsidian
+Une **note de contexte** porte en plus `status:` (`actif`, `en pause`, `clos`), ce qui rend « quels
+projets sont actifs ? » répondable par `grep` sans ouvrir les notes. Ne stocke jamais de date de
+dernière modification : git la connaît — `git log -1 --format=%ad -- <fichier>`.
 
-Frontmatter YAML minimal (`description`, `created_date`), wikilinks `[[Nom]]`, lisibilité conservée
-en Markdown brut même sans plugin.
+Avant toute création de dossier, hub, note de contexte ou note atomique — et avant toute
+modification structurelle d'un contenu existant — lis le hub parent et
+`3_Ressources/Pattern_Extensibilite/Pattern_Extensibilite.md`, applique le pattern, puis mets à jour
+le Registry Rapide concerné. C'est natif : l'utilisateur n'a pas à le demander.
+
+Contrôle de démarrage demandé → diagnostic seul : placeholders de `config.md`, Registry Rapide,
+frontmatter, captures d'`0_Inbox/`, contenu temporaire. N'écris qu'après accord explicite.
 
 ## 12. Skills
 
-Avant d'improviser une procédure récurrente, regarde `.agents/skills/`. La skill
-`google-workspace` (optionnelle) donne accès à Docs, Sheets, Slides, Gmail et Calendar via le CLI
-`gws` — voir `.agents/skills/google-workspace/SKILL.md`.
+Avant d'improviser une procédure récurrente, regarde `.agents/skills/`. La skill `google-workspace`
+(optionnelle) couvre Docs, Sheets, Slides, Gmail et Calendar via le CLI `gws`.

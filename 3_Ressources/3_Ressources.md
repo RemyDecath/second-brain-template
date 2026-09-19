@@ -1,6 +1,6 @@
 ---
 description: Ressources — contenu réutilisable et transverse (glossaire, décisions, conventions).
-created_date: <AAAA-MM-JJ>
+created_date: 2026-09-18
 ---
 
 # 3_Ressources

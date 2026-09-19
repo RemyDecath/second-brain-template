@@ -1,6 +1,6 @@
 ---
 description: Projets en cours — engagements avec une date de fin.
-created_date: <AAAA-MM-JJ>
+created_date: 2026-09-18
 ---
 
 # 1_Projets
@@ -16,15 +16,16 @@ prévue, et un objectif précis. Y entre : tout nouveau projet dès qu'il est ca
 
 ## Convention de nommage
 
-`NomDuProjet/NomDuProjet.md` — le dossier et sa note de contexte portent le même nom (R1).
+`NomDuProjet/NomDuProjet.md` — le dossier et sa note de contexte portent le même nom.
 
 ## Registry Rapide
 
-<!-- EXEMPLE — supprimer après appropriation. -->
+<!-- Une ligne par projet actif. Exemple : -->
+<!-- | Refonte_Site | Refonte du site vitrine, livraison janvier | 1_Projets/Refonte_Site/Refonte_Site.md | -->
+<!-- Un exemple rempli : docs/exemples/EXEMPLE_Projet/ -->
 
 | Élément | Description | Chemin |
 |---|---|---|
-| EXEMPLE_Projet | Exemple fictif — supprimable | 1_Projets/EXEMPLE_Projet/EXEMPLE_Projet.md |
 
 ## Règle de sortie
 

@@ -1,6 +1,6 @@
 ---
 description: Casquettes — rôles permanents, sans date de fin.
-created_date: <AAAA-MM-JJ>
+created_date: 2026-09-18
 ---
 
 # 2_Casquettes
@@ -17,15 +17,16 @@ relève d'une responsabilité durable, sans échéance de clôture.
 ## Convention de nommage
 
 `NomCasquette/NomCasquette.md` pour la note de contexte ; les notes atomiques qui en débordent vivent
-dans le même dossier (R4, voir `3_Ressources/Pattern_Extensibilite/Pattern_Extensibilite.md`).
+dans le même dossier (voir `3_Ressources/Pattern_Extensibilite/Pattern_Extensibilite.md`).
 
 ## Registry Rapide
 
-<!-- EXEMPLE — supprimer après appropriation. -->
+<!-- Une ligne par casquette. Exemple : -->
+<!-- | Tresorier | Trésorier de l'association, rôle permanent | 2_Casquettes/Tresorier/Tresorier.md | -->
+<!-- Un exemple rempli : docs/exemples/EXEMPLE_Casquette/ -->
 
 | Élément | Description | Chemin |
 |---|---|---|
-| EXEMPLE_Casquette | Exemple fictif — supprimable | 2_Casquettes/EXEMPLE_Casquette/EXEMPLE_Casquette.md |
 
 ## Règle de sortie
 
