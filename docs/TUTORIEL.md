@@ -4,8 +4,7 @@ created_date: 2026-09-18 16:44:11
 ---
 # Tutoriel — Second Brain avec Obsidian et Copilot App
 
-Ce dossier est un **second brain personnel prêt à l'emploi** : un endroit pour capturer ce qui
-vous passe par la tête, retrouver vos informations et faire avancer vos projets.
+Ce dossier est un **second brain personnel prêt à l'emploi** : un endroit pour capturer ce qui vous passe par la tête, retrouver vos informations et faire avancer vos projets.
 
 Vous n'avez pas besoin de savoir coder, d'utiliser un terminal ou de connaître Markdown. Le système repose sur deux applications qui ont des rôles différents :
 - **Obsidian** sert à lire, naviguer dans le vault et prendre des notes rapides.
@@ -24,80 +23,53 @@ Avant de commencer, prévoyez :
 
 1. Un compte GitHub avec accès à **GitHub Copilot**.
 2. **Obsidian**, à télécharger depuis [obsidian.md](https://obsidian.md/download).
-3. **GitHub Copilot App**, à installer directement depuis notre application interne **Workspace
-   One**. N'utilisez pas le site officiel GitHub pour cette installation.
-4. **Google Drive pour ordinateur**, à installer également depuis **Workspace One**. C'est votre
-   filet de sécurité : voir l'étape 1.2.
+3. **GitHub Copilot App**, à installer directement depuis notre application interne **Workspace One**. N'utilisez pas le site officiel GitHub pour cette installation.
+4. **Google Drive pour ordinateur**, à installer également depuis **Workspace One**. C'est votre filet de sécurité : voir l'étape 1.2.
 
 ### 1.1 Récupérer une copie du modèle
 
 Le modèle vit sur GitHub. Deux façons de le récupérer, aucune ne demande de savoir coder :
 
-- **Le plus simple** : sur la page GitHub du modèle, bouton vert **Code**, puis **Download ZIP**.
-  Décompressez l'archive, vous obtenez un dossier prêt à l'emploi.
-- **Le plus durable** : cliquez sur **Fork** en haut à droite pour créer votre propre copie sur
-  GitHub, installez [GitHub Desktop](https://desktop.github.com/), puis utilisez **Clone
-  repository** pour la récupérer sur votre ordinateur. C'est cette voie qui permet de recevoir plus
-  tard les améliorations du modèle (section 12) et de conserver un historique de vos notes.
+- **Le plus simple** : sur la page GitHub du modèle, bouton vert **Code**, puis **Download ZIP**. Décompressez l'archive, vous obtenez un dossier prêt à l'emploi.
+- **Le plus durable** : cliquez sur **Fork** en haut à droite pour créer votre propre copie sur GitHub, installez [GitHub Desktop](https://desktop.github.com/), puis utilisez **Clone repository** pour la récupérer sur votre ordinateur. C'est cette voie qui permet de recevoir plus tard les améliorations du modèle (section 12) et de conserver un historique de vos notes.
 
 Renommez le dossier comme vous le souhaitez, par exemple `Second-Brain`.
 
 ### 1.2 Le mettre à l'abri avec Google Drive
 
-**Ce dossier va contenir votre mémoire de travail. S'il n'existe qu'à un seul endroit, une panne de
-disque vous le fait perdre en entier.** Google Drive pour ordinateur règle le problème sans rien
-changer à vos habitudes : le dossier reste un dossier normal sur votre ordinateur, et chaque
-modification part automatiquement dans le cloud.
+**Ce dossier va contenir votre mémoire de travail. S'il n'existe qu'à un seul endroit, une panne de disque vous le fait perdre en entier.** Google Drive pour ordinateur règle le problème sans rien changer à vos habitudes : le dossier reste un dossier normal sur votre ordinateur, et chaque modification part automatiquement dans le cloud.
 
-1. Ouvrez **Workspace One**, recherchez **Google Drive pour ordinateur** et lancez son installation
-   depuis l'application interne, puis connectez-vous avec votre compte Google.
-2. L'installation ajoute un emplacement **Google Drive** à votre ordinateur : un lecteur (souvent
-   `G:`) sous Windows, un dossier `Google Drive` dans le Finder sous macOS. Ouvrez-le, puis entrez
-   dans **Mon Drive**.
+1. Ouvrez **Workspace One**, recherchez **Google Drive pour ordinateur** et lancez son installation depuis l'application interne, puis connectez-vous avec votre compte Google.
+2. L'installation ajoute un emplacement **Google Drive** à votre ordinateur : un lecteur (souvent `G:`) sous Windows, un dossier `Google Drive` dans le Finder sous macOS. Ouvrez-le, puis entrez dans **Mon Drive**.
 3. **Déplacez-y le dossier du second brain** récupéré à l'étape 1.1.
 
-Faites ce déplacement **maintenant**, avant d'ouvrir le dossier dans Obsidian et dans Copilot App.
-Si vous le déplacez plus tard, les deux applications continueront de pointer vers l'ancien
-emplacement et ne verront plus vos notes.
+Faites ce déplacement **maintenant**, avant d'ouvrir le dossier dans Obsidian et dans Copilot App. Si vous le déplacez plus tard, les deux applications continueront de pointer vers l'ancien emplacement et ne verront plus vos notes.
 
 ### 1.3 Le rendre disponible hors connexion — indispensable
 
-Par défaut, Google Drive **ne télécharge pas** les fichiers sur votre disque : il se contente de les
-afficher et ne va les chercher qu'au moment où vous les ouvrez. Obsidian et Copilot App, eux, ont
-besoin des fichiers réellement présents. Sans ce réglage, vous verrez des notes vides ou des erreurs
-de lecture, et l'agent travaillera sur des fichiers qu'il ne peut pas ouvrir.
+Par défaut, Google Drive **ne télécharge pas** les fichiers sur votre disque : il se contente de les afficher et ne va les chercher qu'au moment où vous les ouvrez. Obsidian et Copilot App, eux, ont besoin des fichiers réellement présents. Sans ce réglage, vous verrez des notes vides ou des erreurs de lecture, et l'agent travaillera sur des fichiers qu'il ne peut pas ouvrir.
 
 1. Dans l'emplacement Google Drive, faites un **clic droit sur le dossier du second brain**.
 2. Choisissez **Accès hors connexion** (le libellé peut varier selon la version).
 3. Sélectionnez **Disponible hors connexion**.
 4. Attendez que l'icône de synchronisation indique que le dossier est entièrement téléchargé.
 
-Le dossier vit alors à deux endroits à la fois : sur votre disque, donc rapide et utilisable sans
-internet, et sur Google Drive, donc récupérable si votre ordinateur tombe en panne.
+Le dossier vit alors à deux endroits à la fois : sur votre disque, donc rapide et utilisable sans internet, et sur Google Drive, donc récupérable si votre ordinateur tombe en panne.
 
-> **Un seul ordinateur à la fois.** Ne travaillez pas sur le même second brain depuis deux
-> ordinateurs simultanément : Google Drive synchroniserait les deux versions et créerait des
-> doublons de fichiers. Fermez Obsidian et Copilot App sur le premier avant d'ouvrir sur le second.
+> **Un seul ordinateur à la fois.** Ne travaillez pas sur le même second brain depuis deux ordinateurs simultanément : Google Drive synchroniserait les deux versions et créerait des doublons de fichiers. Fermez Obsidian et Copilot App sur le premier avant d'ouvrir sur le second.
 
 ### 1.4 Avant de continuer
 
-Le dossier doit maintenant rester à cet emplacement. Obsidian et Copilot App devront ouvrir **la
-même copie**, pas deux copies différentes. Notez son chemin quelque part, les étapes suivantes en
-ont besoin.
+Le dossier doit maintenant rester à cet emplacement. Obsidian et Copilot App devront ouvrir **la même copie**, pas deux copies différentes. Notez son chemin quelque part, les étapes suivantes en ont besoin.
 
 ## 2. Installer et ouvrir le vault dans Obsidian
 
 1. Installez puis ouvrez Obsidian.
-2. Choisissez **Ouvrir un dossier comme vault existant** (le libellé peut varier légèrement selon
-   votre version).
-3. Sélectionnez le dossier qui contient `README.md`, `config.md`, `0_Inbox/`, `1_Projets/` et les
-   autres dossiers principaux.
+2. Choisissez **Ouvrir un dossier comme vault existant** (le libellé peut varier légèrement selon votre version).
+3. Sélectionnez le dossier qui contient `README.md`, `config.md`, `0_Inbox/`, `1_Projets/` et les autres dossiers principaux.
 4. Vérifiez que l'arborescence du vault apparaît bien à gauche.
 
-Aucun plugin supplémentaire n'est nécessaire pour commencer : le modèle fonctionne avec Obsidian
-tel qu'il s'installe. Vos réglages Obsidian (thème, raccourcis, plugins) restent propres à votre
-ordinateur et ne sont pas partagés avec le modèle. Si Obsidian demande si vous faites confiance à
-ce vault, acceptez uniquement si le dossier provient bien de la source attendue.
+Aucun plugin supplémentaire n'est nécessaire pour commencer : le modèle fonctionne avec Obsidian tel qu'il s'installe. Vos réglages Obsidian (thème, raccourcis, plugins) restent propres à votre ordinateur et ne sont pas partagés avec le modèle. Si Obsidian demande si vous faites confiance à ce vault, acceptez uniquement si le dossier provient bien de la source attendue.
 
 ### Ce que vous pouvez faire dans Obsidian
 
@@ -110,21 +82,13 @@ Pour toute autre écriture, fermez l'édition dans Obsidian et demandez la modif
 
 ## 3. Installer et ouvrir le projet dans Copilot App
 
-1. Ouvrez **Workspace One**, recherchez **GitHub Copilot App** et lancez son installation depuis
-   l'application interne. N'utilisez pas le site officiel GitHub.
+1. Ouvrez **Workspace One**, recherchez **GitHub Copilot App** et lancez son installation depuis l'application interne. N'utilisez pas le site officiel GitHub.
 2. Ouvrez GitHub Copilot App et connectez-vous avec votre compte GitHub.
-3. Ouvrez ou ajoutez un projet à partir du **même dossier local** que celui choisi dans Obsidian.
-   Si le modèle est fourni depuis GitHub, utilisez l'option de l'application permettant d'ouvrir ou
-   de récupérer le dépôt ; s'il est déjà sur votre ordinateur, choisissez ce dossier existant.
-4. Ouvrez une conversation dans ce projet et vérifiez que Copilot App voit `README.md` et
-   `config.md`.
-5. Dans le sélecteur de modèle, choisissez **GPT-5.6 Luna** et réglez le raisonnement sur
-   **Médium**. Faites de ce réglage votre valeur par défaut pour éviter une surconsommation de
-   facturation ; ne sélectionnez un niveau supérieur que pour une demande exceptionnellement
-   complexe.
+3. Ouvrez ou ajoutez un projet à partir du **même dossier local** que celui choisi dans Obsidian. Si le modèle est fourni depuis GitHub, utilisez l'option de l'application permettant d'ouvrir ou de récupérer le dépôt ; s'il est déjà sur votre ordinateur, choisissez ce dossier existant.
+4. Ouvrez une conversation dans ce projet et vérifiez que Copilot App voit `README.md` et `config.md`.
+5. Dans le sélecteur de modèle, choisissez **GPT-5.6 Luna** et réglez le raisonnement sur **Médium**. Faites de ce réglage votre valeur par défaut pour éviter une surconsommation de facturation ; ne sélectionnez un niveau supérieur que pour une demande exceptionnellement complexe.
 
-Le fichier `.github/copilot-instructions.md` indique automatiquement à Copilot App comment travailler
-dans ce second brain. Vous n'avez normalement pas besoin de le lire ou de le modifier.
+Le fichier `.github/copilot-instructions.md` indique automatiquement à Copilot App comment travailler dans ce second brain. Vous n'avez normalement pas besoin de le lire ou de le modifier.
 
 ### Vérification rapide
 
@@ -161,41 +125,29 @@ Vous pouvez commencer à utiliser le système sans mémoriser son vocabulaire. C
 - Le contexte est constitué des **documents posés sur le bureau** et de la conversation en cours.
 - La session est la **réunion de travail** consacrée à un sujet.
 
-Une skill n'est pas une note personnelle et ne remplace pas le vault. Elle explique comment réaliser
-une tâche répétitive ou accéder à un outil ; n'activez ou n'installez que les skills dont vous avez
-besoin.
+Une skill n'est pas une note personnelle et ne remplace pas le vault. Elle explique comment réaliser une tâche répétitive ou accéder à un outil ; n'activez ou n'installez que les skills dont vous avez besoin.
 
 ### Pourquoi ne pas tout mettre dans une seule session ?
 
-Une session n'est pas la mémoire permanente du second brain : les notes et les fichiers du vault le
-sont. Une très longue conversation finit par contenir trop de sujets et de détails ; certains
-éléments anciens peuvent être moins disponibles pour l'agent. Cela augmente le risque de :
+Une session n'est pas la mémoire permanente du second brain : les notes et les fichiers du vault le sont. Une très longue conversation finit par contenir trop de sujets et de détails ; certains éléments anciens peuvent être moins disponibles pour l'agent. Cela augmente le risque de :
 
 - mélanger deux projets ou deux casquettes ;
 - appliquer une ancienne décision au mauvais sujet ;
 - modifier le mauvais fichier ;
 - rendre les réponses plus lentes, moins claires et plus coûteuses à relire.
 
-La règle pratique est **une tâche par session** : évitez de tout faire au même endroit. Une session
-doit rester centrée sur un seul objectif cohérent.
+La règle pratique est **une tâche par session** : évitez de tout faire au même endroit. Une session doit rester centrée sur un seul objectif cohérent.
 
-Cela optimise le contexte fourni à Copilot App : avec moins de sujets concurrents à distinguer,
-l'agent limite les réponses ou modifications hors sujet, donc les hallucinations. Des sessions plus
-courtes consomment aussi moins de contexte et contribuent à maîtriser les coûts.
+Cela optimise le contexte fourni à Copilot App : avec moins de sujets concurrents à distinguer, l'agent limite les réponses ou modifications hors sujet, donc les hallucinations. Des sessions plus courtes consomment aussi moins de contexte et contribuent à maîtriser les coûts.
 
 - une session pour le premier setup ;
 - une session par projet important ;
 - une session dédiée à une casquette si le sujet est volumineux ;
 - une session pour une revue hebdomadaire ou un traitement groupé de l'Inbox.
 
-Ne mélangez pas dans une même session une question sur un projet, le tri de l'Inbox, une revue
-hebdomadaire et une modification du fonctionnement du système. Ouvrez une nouvelle session dès que
-vous changez de tâche ou de sujet ; cela aide Copilot App à conserver le bon contexte et à éviter
-les modifications au mauvais endroit.
+Ne mélangez pas dans une même session une question sur un projet, le tri de l'Inbox, une revue hebdomadaire et une modification du fonctionnement du système. Ouvrez une nouvelle session dès que vous changez de tâche ou de sujet ; cela aide Copilot App à conserver le bon contexte et à éviter les modifications au mauvais endroit.
 
-Gardez la même session pour les questions de suivi sur le même sujet. Vous ne perdez pas les règles
-du projet en changeant de session : Copilot App peut relire `config.md`, les instructions et les
-notes pertinentes.
+Gardez la même session pour les questions de suivi sur le même sujet. Vous ne perdez pas les règles du projet en changeant de session : Copilot App peut relire `config.md`, les instructions et les notes pertinentes.
 
 ## 5. Comprendre les cinq dossiers
 
@@ -217,20 +169,13 @@ Le classement suit la méthode **IPCRA** :
 - Cela peut servir dans plusieurs contextes ? **`3_Ressources/`**.
 - C'est terminé ou inactif ? **`4_Archives/`**.
 
-En cas de doute, mettez la capture dans `0_Inbox/` et laissez Copilot App vous proposer le
-classement.
+En cas de doute, mettez la capture dans `0_Inbox/` et laissez Copilot App vous proposer le classement.
 
-Deux autres dossiers existent, que vous n'avez pas à alimenter vous-même : `_systeme/` (le
-fonctionnement du système — journal des décisions, routines d'entretien) et `docs/` (ce tutoriel et
-des exemples remplis). `docs/` est volontairement invisible pour Copilot App, pour ne pas
-encombrer son contexte à chaque conversation.
+Deux autres dossiers existent, que vous n'avez pas à alimenter vous-même : `_systeme/` (le fonctionnement du système — journal des décisions, routines d'entretien) et `docs/` (ce tutoriel et des exemples remplis). `docs/` est volontairement invisible pour Copilot App, pour ne pas encombrer son contexte à chaque conversation.
 
 ## 6. Premier réglage du projet
 
-Effectuez ces étapes dans Copilot App, dans l'ordre. Les prompts sont prêts à copier-coller.
-Ils décrivent uniquement votre intention. Le routage, la lecture de `config.md` et des hubs, le
-respect du pattern, le frontmatter, la mise à jour des Registry Rapide et la cohérence des liens
-sont des règles natives du système : vous n'avez pas à les répéter.
+Effectuez ces étapes dans Copilot App, dans l'ordre. Les prompts sont prêts à copier-coller. Ils décrivent uniquement votre intention. Le routage, la lecture de `config.md` et des hubs, le respect du pattern, le frontmatter, la mise à jour des Registry Rapide et la cohérence des liens sont des règles natives du système : vous n'avez pas à les répéter.
 
 ### Étape 1 — Faire expliquer le système
 
@@ -260,8 +205,7 @@ d'écrire dans config.md.
 
 Remplacez les éléments entre crochets avant d'envoyer le prompt :
 
-La lecture du hub concerné et de `3_Ressources/Pattern_Extensibilite/Pattern_Extensibilite.md`
-est une règle automatique de Copilot App. Vous n'avez pas besoin de la demander dans le prompt.
+La lecture du hub concerné et de `3_Ressources/Pattern_Extensibilite/Pattern_Extensibilite.md` est une règle automatique de Copilot App. Vous n'avez pas besoin de la demander dans le prompt.
 
 ```text
 À partir de config.md, crée ma première casquette « [NOM DE LA CASQUETTE] ».
@@ -294,8 +238,7 @@ pour chacun. Attends mon accord avant toute modification.
 
 ### 7.1 Capturer une idée manuellement
 
-Dans Obsidian, créez une nouvelle note **dans `0_Inbox/`**. Donnez-lui un nom simple, par exemple
-`AAAA-MM-JJ-idee-cadeau.md`, puis notez ce que vous avez en tête sans chercher à le classer.
+Dans Obsidian, créez une nouvelle note **dans `0_Inbox/`**. Donnez-lui un nom simple, par exemple `AAAA-MM-JJ-idee-cadeau.md`, puis notez ce que vous avez en tête sans chercher à le classer.
 
 Une capture peut ressembler à ceci :
 
@@ -310,8 +253,7 @@ created_date: AAAA-MM-JJ
 Texte libre, lien ou prochaine question.
 ```
 
-Si vous ne savez pas comment nommer ou formater la capture, écrivez simplement dans une note de
-`0_Inbox/` et demandez ensuite à Copilot App de la remettre en forme.
+Si vous ne savez pas comment nommer ou formater la capture, écrivez simplement dans une note de `0_Inbox/` et demandez ensuite à Copilot App de la remettre en forme.
 
 ### 7.2 Faire qualifier une capture par Copilot App
 
@@ -336,8 +278,7 @@ Effectue la qualification.
 
 ### 7.3 Demander une modification
 
-Pour corriger, compléter ou réorganiser une note qui n'est plus dans Inbox, passez toujours par
-Copilot App :
+Pour corriger, compléter ou réorganiser une note qui n'est plus dans Inbox, passez toujours par Copilot App :
 
 ```text
 Dans la note [CHEMIN OU NOM DE LA NOTE], reformule la section [NOM DE LA SECTION]
@@ -388,31 +329,23 @@ Fais la rétro mensuelle du second brain.
 ## 9. Règles à retenir
 
 - **Inbox = capture manuelle.** Si vous hésitez, capturez là.
-- **Copilot App = organisation et écriture du dépôt.** Même une petite correction dans un projet ou
-  une ressource doit passer par l'application.
-- **Modèle et coût : GPT-5.6 Luna + raisonnement Médium par défaut.** Vérifiez ce réglage au début
-  d'une nouvelle session et n'augmentez le raisonnement que lorsque la tâche le nécessite.
+- **Copilot App = organisation et écriture du dépôt.** Même une petite correction dans un projet ou une ressource doit passer par l'application.
+- **Modèle et coût : GPT-5.6 Luna + raisonnement Médium par défaut.** Vérifiez ce réglage au début d'une nouvelle session et n'augmentez le raisonnement que lorsque la tâche le nécessite.
 - **Obsidian = lecture, navigation et capture.** N'éditez pas directement les autres dossiers.
-- **`4_Archives/` n'est pas relu automatiquement par Copilot App** : demandez explicitement la
-  réactivation d'un élément archivé.
-- Les informations sensibles déclarées dans `config.md` ne doivent jamais être écrites dans le
-  vault.
+- **`4_Archives/` n'est pas relu automatiquement par Copilot App** : demandez explicitement la réactivation d'un élément archivé.
+- Les informations sensibles déclarées dans `config.md` ne doivent jamais être écrites dans le vault.
 - Relisez le résumé des fichiers modifiés par Copilot App avant de continuer votre travail.
-- **Votre sauvegarde tient à deux conditions** (section 1.2) : le dossier est dans *Mon Drive*, et
-  il est marqué *Disponible hors connexion*. Vérifiez-le de temps en temps — l'icône de Google
-  Drive dans la barre des tâches doit indiquer que tout est synchronisé.
+- **Votre sauvegarde tient à deux conditions** (section 1.2) : le dossier est dans *Mon Drive*, et il est marqué *Disponible hors connexion*. Vérifiez-le de temps en temps — l'icône de Google Drive dans la barre des tâches doit indiquer que tout est synchronisé.
 
 ## 10. En cas de problème
 
 ### Copilot App ne voit pas mes notes
 
-Vérifiez qu'Obsidian et Copilot App utilisent exactement le même dossier local. Si vous avez ouvert
-une seconde copie du modèle, fermez-la et rouvrez le dossier d'origine dans les deux applications.
+Vérifiez qu'Obsidian et Copilot App utilisent exactement le même dossier local. Si vous avez ouvert une seconde copie du modèle, fermez-la et rouvrez le dossier d'origine dans les deux applications.
 
 ### Une modification faite dans Copilot App n'apparaît pas dans Obsidian
 
-Demandez à Obsidian de recharger le vault ou fermez puis rouvrez le vault. Vérifiez également que
-Copilot App a bien terminé son opération et que le résumé indique le bon chemin de fichier.
+Demandez à Obsidian de recharger le vault ou fermez puis rouvrez le vault. Vérifiez également que Copilot App a bien terminé son opération et que le résumé indique le bon chemin de fichier.
 
 ### Je veux modifier directement une note située ailleurs que dans Inbox
 
@@ -425,9 +358,7 @@ prévus, puis applique-les uniquement après ma confirmation.
 
 ### J'ai déjà modifié une note à la main, en dehors de `0_Inbox/`
 
-Cela arrive et ce n'est pas grave. Le risque n'est pas la modification elle-même, c'est qu'elle
-décale le reste : un registre qui ne pointe plus au bon endroit, un lien cassé, un frontmatter
-abîmé. Faites vérifier :
+Cela arrive et ce n'est pas grave. Le risque n'est pas la modification elle-même, c'est qu'elle décale le reste : un registre qui ne pointe plus au bon endroit, un lien cassé, un frontmatter abîmé. Faites vérifier :
 
 ```text
 J'ai modifié à la main la note [CHEMIN], en dehors de 0_Inbox.
@@ -436,19 +367,15 @@ wikilinks, plafond de la note. Présente les problèmes et propose une correctio
 pour chacun. N'écris rien avant mon accord.
 ```
 
-Si la note est vraiment abîmée, Google Drive conserve ses versions précédentes : clic droit sur le
-fichier dans l'emplacement Google Drive, puis **Gérer les versions**.
+Si la note est vraiment abîmée, Google Drive conserve ses versions précédentes : clic droit sur le fichier dans l'emplacement Google Drive, puis **Gérer les versions**.
 
 ### Une note apparaît vide, ou Obsidian dit qu'il ne peut pas l'ouvrir
 
-C'est presque toujours le réglage hors connexion qui manque (section 1.3). Vérifiez que le dossier
-du second brain est bien marqué **Disponible hors connexion** dans Google Drive, et attendez la fin
-du téléchargement.
+C'est presque toujours le réglage hors connexion qui manque (section 1.3). Vérifiez que le dossier du second brain est bien marqué **Disponible hors connexion** dans Google Drive, et attendez la fin du téléchargement.
 
 ### Je vois des fichiers en double, avec un nom du type « ... (1).md »
 
-Deux ordinateurs ont travaillé sur le même second brain en même temps. Fermez Obsidian et Copilot
-App partout sauf sur une machine, puis demandez le ménage :
+Deux ordinateurs ont travaillé sur le même second brain en même temps. Fermez Obsidian et Copilot App partout sauf sur une machine, puis demandez le ménage :
 
 ```text
 Le vault contient des fichiers en double créés par la synchronisation
@@ -460,37 +387,27 @@ dis-moi lequel garder, et attends mon accord avant de supprimer quoi que ce soit
 
 - `config.md` contient vos préférences personnelles et votre périmètre sensible.
 - `.github/copilot-instructions.md` contient les règles de travail de Copilot App.
-- `3_Ressources/Pattern_Extensibilite/Pattern_Extensibilite.md` explique comment créer une
-  nouvelle branche ou une nouvelle note.
+- `3_Ressources/Pattern_Extensibilite/Pattern_Extensibilite.md` explique comment créer une nouvelle branche ou une nouvelle note.
 - `docs/exemples/` contient un projet et une casquette entièrement remplis, à lire comme modèles.
 - `_systeme/routines.md` décrit l'entretien hebdomadaire et la rétro mensuelle.
 - `_systeme/_systeme.md` est le point d'entrée du dossier système.
-- Le dossier `.agents/skills/` peut contenir des compétences optionnelles pour Copilot App. Elles ne
-  sont pas nécessaires pour commencer.
+- Le dossier `.agents/skills/` peut contenir des compétences optionnelles pour Copilot App. Elles ne sont pas nécessaires pour commencer.
 
-Le modèle utilise du Markdown lisible, mais vous n'avez pas besoin d'en connaître la syntaxe :
-demandez à Copilot App de créer ou de modifier les notes en respectant les règles du système.
+Le modèle utilise du Markdown lisible, mais vous n'avez pas besoin d'en connaître la syntaxe : demandez à Copilot App de créer ou de modifier les notes en respectant les règles du système.
 
 ## 12. Recevoir les améliorations du modèle
 
-Cette section ne concerne que ceux qui ont **forké** le modèle (étape 1.1, seconde option). Si vous
-avez téléchargé un ZIP, votre copie est indépendante : il n'y a rien à synchroniser, et vous pouvez
-ignorer cette section.
+Cette section ne concerne que ceux qui ont **forké** le modèle (étape 1.1, seconde option). Si vous avez téléchargé un ZIP, votre copie est indépendante : il n'y a rien à synchroniser, et vous pouvez ignorer cette section.
 
-Le modèle continue d'évoluer : règles affinées, routines améliorées, corrections. Ces changements ne
-touchent que les fichiers du socle — `.github/copilot-instructions.md`, `docs/`,
-`3_Ressources/Pattern_Extensibilite/`, `_systeme/routines.md` — **jamais vos notes**.
+Le modèle continue d'évoluer : règles affinées, routines améliorées, corrections. Ces changements ne touchent que les fichiers du socle — `.github/copilot-instructions.md`, `docs/`, `3_Ressources/Pattern_Extensibilite/`, `_systeme/routines.md` — **jamais vos notes**.
 
 Pour les récupérer :
 
 1. Ouvrez votre fork sur GitHub.
-2. Si un bandeau indique que votre branche est en retard sur le modèle d'origine, cliquez sur
-   **Sync fork**, puis **Update branch**.
-3. Dans GitHub Desktop, cliquez sur **Pull origin** pour rapatrier la mise à jour sur votre
-   ordinateur.
+2. Si un bandeau indique que votre branche est en retard sur le modèle d'origine, cliquez sur **Sync fork**, puis **Update branch**.
+3. Dans GitHub Desktop, cliquez sur **Pull origin** pour rapatrier la mise à jour sur votre ordinateur.
 
-Si GitHub refuse la synchronisation en signalant un conflit, c'est que vous avez modifié l'un des
-fichiers du socle de votre côté. Ne tentez pas de trancher à la main :
+Si GitHub refuse la synchronisation en signalant un conflit, c'est que vous avez modifié l'un des fichiers du socle de votre côté. Ne tentez pas de trancher à la main :
 
 ```text
 La synchronisation avec le modèle d'origine signale un conflit.
@@ -498,5 +415,4 @@ Explique-moi quels fichiers sont concernés, ce que le modèle propose de change
 et ce que je perdrais dans chaque cas. Attends mon arbitrage avant toute écriture.
 ```
 
-Avant toute mise à jour, vérifiez que Google Drive a fini de synchroniser : vous disposez ainsi
-d'une version antérieure récupérable si le résultat ne vous convient pas.
+Avant toute mise à jour, vérifiez que Google Drive a fini de synchroniser : vous disposez ainsi d'une version antérieure récupérable si le résultat ne vous convient pas.
