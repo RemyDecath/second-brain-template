@@ -19,12 +19,17 @@ Vous découvrirez les autres règles, le vocabulaire de Copilot App et le foncti
 
 ## 1. Installer et mettre à l'abri
 
-Avant de commencer, prévoyez :
+Avant de commencer, obtenez les accès suivants dans cet ordre :
 
-1. Un compte GitHub avec accès à **GitHub Copilot**.
-2. **Obsidian**, à télécharger depuis [obsidian.md](https://obsidian.md/download).
-3. **GitHub Copilot App**, à installer directement depuis notre application interne **Workspace One**. N'utilisez pas le site officiel GitHub pour cette installation.
-4. **Google Drive pour ordinateur**, à installer également depuis **Workspace One**. C'est votre filet de sécurité : voir l'étape 1.2.
+1. Les droits **GitHub** dans notre logiciel interne **Identity Access**.
+2. Un compte GitHub, à créer via [ce lien](https://github.com/orgs/dktunited/sso).
+3. Une licence **GitHub Copilot**, à demander via [ce formulaire](https://idp.decathlon.net/self-service/github-tools/copilot).
+
+Prévoyez également :
+
+4. **Obsidian**, à télécharger depuis [obsidian.md](https://obsidian.md/download).
+5. **GitHub Copilot App**, à installer directement depuis notre application interne **Workspace One**. N'utilisez pas le site officiel GitHub pour cette installation.
+6. **Google Drive pour ordinateur**, à installer également depuis **Workspace One**. C'est votre filet de sécurité : voir l'étape 1.2.
 
 ### 1.1 Récupérer une copie du modèle
 
