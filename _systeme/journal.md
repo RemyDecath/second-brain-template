@@ -204,3 +204,11 @@ routine.
 
 **Effet** — 16 fichiers, tous classés, tous sous leur plafond. Points de pression :
 `Pattern_Extensibilite.md` (77/80) et `_systeme/routines.md` (75/80).
+
+### 2026-09-21 — décision — Source d'installation de Copilot App
+
+**Décision** — Le tutoriel indique désormais que GitHub Copilot App doit être installé
+directement depuis l'application interne **Workspace One**, et non depuis le site officiel GitHub.
+
+**Effet** — Les prérequis et l'étape d'installation du tutoriel renvoient tous deux vers
+Workspace One, afin d'éviter un parcours d'installation incohérent.

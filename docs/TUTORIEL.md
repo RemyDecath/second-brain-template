@@ -84,7 +84,8 @@ Avant de commencer, prévoyez :
 
 1. Un compte GitHub avec accès à **GitHub Copilot**.
 2. **Obsidian**, à télécharger depuis [obsidian.md](https://obsidian.md/download).
-3. **GitHub Copilot App**, à installer depuis le site ou l'application officielle GitHub.
+3. **GitHub Copilot App**, à installer directement depuis notre application interne **Workspace
+   One**. N'utilisez pas le site officiel GitHub pour cette installation.
 4. **Google Drive pour ordinateur**, à télécharger depuis
    [google.com/drive/download](https://www.google.com/drive/download/). C'est votre filet de
    sécurité : voir l'étape 1.2.
@@ -169,8 +170,9 @@ Pour toute autre écriture, fermez l'édition dans Obsidian et demandez la modif
 
 ## 3. Installer et ouvrir le projet dans Copilot App
 
-1. Installez puis ouvrez GitHub Copilot App.
-2. Connectez-vous avec votre compte GitHub.
+1. Ouvrez **Workspace One**, recherchez **GitHub Copilot App** et lancez son installation depuis
+   l'application interne. N'utilisez pas le site officiel GitHub.
+2. Ouvrez GitHub Copilot App et connectez-vous avec votre compte GitHub.
 3. Ouvrez ou ajoutez un projet à partir du **même dossier local** que celui choisi dans Obsidian.
    Si le modèle est fourni depuis GitHub, utilisez l'option de l'application permettant d'ouvrir ou
    de récupérer le dépôt ; s'il est déjà sur votre ordinateur, choisissez ce dossier existant.
