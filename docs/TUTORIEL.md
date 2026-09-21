@@ -38,7 +38,7 @@ réponses et à garder un second brain facile à entretenir.
 | Terme | Explication simple | Dans ce projet |
 |---|---|---|
 | **Agent** | L'assistant qui lit les fichiers, raisonne et réalise votre demande. | Il applique les règles de `.github/copilot-instructions.md` et peut organiser le vault. |
-| **Skill** | Un mode d'emploi spécialisé, parfois accompagné d'outils. | `.agents/skills/` contient par exemple une skill optionnelle pour Google Workspace. |
+| **Skill** | Un mode d'emploi spécialisé, parfois accompagné d'outils. | `.agents/skills/` peut contenir des compétences optionnelles pour Copilot App. |
 | **Contexte** | Les informations disponibles pour l'agent au moment où il répond. | La conversation en cours, les instructions du projet et les notes utiles ; pas forcément tout le vault. |
 | **Session** | Une conversation de travail avec un objectif donné. | Elle sert à avancer sur un sujet cohérent, comme le setup ou un projet précis. |
 | **Vault** | Le dossier de notes ouvert dans Obsidian. | Ici, c'est le dossier de ce modèle, également ouvert dans Copilot App. |
@@ -476,8 +476,8 @@ dis-moi lequel garder, et attends mon accord avant de supprimer quoi que ce soit
 - `docs/exemples/` contient un projet et une casquette entièrement remplis, à lire comme modèles.
 - `_systeme/routines.md` décrit l'entretien hebdomadaire et la rétro mensuelle.
 - `_systeme/_systeme.md` est le point d'entrée du dossier système.
-- Le dossier `.agents/skills/` contient des compétences optionnelles pour Copilot App, notamment
-  l'intégration Google Workspace. Elles ne sont pas nécessaires pour commencer.
+- Le dossier `.agents/skills/` peut contenir des compétences optionnelles pour Copilot App. Elles ne
+  sont pas nécessaires pour commencer.
 
 Le modèle utilise du Markdown lisible, mais vous n'avez pas besoin d'en connaître la syntaxe :
 demandez à Copilot App de créer ou de modifier les notes en respectant les règles du système.

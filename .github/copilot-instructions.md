@@ -137,5 +137,4 @@ frontmatter, captures d'`0_Inbox/`, contenu temporaire. N'écris qu'après accor
 
 ## 12. Skills
 
-Avant d'improviser une procédure récurrente, regarde `.agents/skills/`. La skill `google-workspace`
-(optionnelle) couvre Docs, Sheets, Slides, Gmail et Calendar via le CLI `gws`.
+Avant d'improviser une procédure récurrente, regarde les skills disponibles dans `.agents/skills/`.

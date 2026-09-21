@@ -221,3 +221,11 @@ cohérent, et d'ouvrir une nouvelle session dès que le sujet change.
 **Effet** — Le tutoriel déconseille explicitement de mélanger plusieurs activités sans rapport dans
 la même session, afin d'optimiser le contexte, de limiter les hallucinations et de maîtriser les
 coûts, tout en réduisant les risques de modification au mauvais endroit.
+
+### 2026-09-21 — décision — Retrait de la skill Google Workspace
+
+**Décision** — La skill `google-workspace` et ses scripts associés sont retirés du modèle à la
+demande de l'utilisateur.
+
+**Effet** — Les références actives à cette skill sont supprimées du socle, de la configuration, du
+README et du tutoriel. Les mentions historiques antérieures dans ce journal sont conservées.

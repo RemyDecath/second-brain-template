@@ -35,4 +35,4 @@ rien changer à vos habitudes. Le tutoriel détaille ce réglage, qui n'est pas 
 | `.github/copilot-instructions.md` | Les règles de travail de l'agent. Le socle, tenu sous 120 lignes. |
 | `_systeme/` | Le fonctionnement du système : journal, routines d'entretien, améliorations. |
 | `docs/` | Tutoriel et exemples remplis — pour vous, volontairement hors du contexte de l'agent. |
-| `.agents/skills/` | Compétences optionnelles (ex. Google Workspace). |
+| `.agents/skills/` | Compétences optionnelles de l'agent. |
