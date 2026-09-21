@@ -7,85 +7,16 @@ created_date: 2026-09-18 16:44:11
 Ce dossier est un **second brain personnel prêt à l'emploi** : un endroit pour capturer ce qui
 vous passe par la tête, retrouver vos informations et faire avancer vos projets.
 
-Vous n'avez pas besoin de savoir coder, d'utiliser un terminal ou de connaître Markdown. Le système
-repose sur deux applications qui ont des rôles différents :
-
+Vous n'avez pas besoin de savoir coder, d'utiliser un terminal ou de connaître Markdown. Le système repose sur deux applications qui ont des rôles différents :
 - **Obsidian** sert à lire, naviguer dans le vault et prendre des notes rapides.
 - **GitHub Copilot App** sert à comprendre, organiser et modifier le contenu du dossier.
 
-> **Règle essentielle**
+> **La seule règle à connaître avant de commencer**
 >
 > - Les prises de notes manuelles se font **uniquement dans `0_Inbox/`**.
-> - Toute organisation ou modification du dépôt se fait **dans Copilot App** : créer, déplacer,
->   renommer, corriger, transformer, archiver une note ou mettre à jour un registre.
-> - Dans Obsidian, vous pouvez lire et naviguer partout, mais vous ne modifiez pas directement les
->   autres dossiers.
+> - Pour organiser ou modifier le reste du dépôt, utilisez **Copilot App**.
 
-Cette règle évite que l'organisation du vault et les instructions de l'assistant se contredisent.
-
-> **Réglage recommandé pour maîtriser la facturation**
->
-> Dans Copilot App, utilisez le modèle **GPT-5.6 Luna** avec le niveau de raisonnement
-> **Médium** par défaut. C'est le réglage conseillé pour ce second brain : il offre un bon
-> équilibre entre qualité et coût. N'augmentez le niveau de raisonnement ou ne changez de modèle
-> que si une tâche le justifie réellement, puis revenez à ce réglage.
-
-## Vocabulaire essentiel
-
-Quelques mots reviennent souvent dans Copilot App. Les comprendre aide à obtenir de meilleures
-réponses et à garder un second brain facile à entretenir.
-
-| Terme | Explication simple | Dans ce projet |
-|---|---|---|
-| **Agent** | L'assistant qui lit les fichiers, raisonne et réalise votre demande. | Il applique les règles de `.github/copilot-instructions.md` et peut organiser le vault. |
-| **Skill** | Un mode d'emploi spécialisé, parfois accompagné d'outils. | `.agents/skills/` peut contenir des compétences optionnelles pour Copilot App. |
-| **Contexte** | Les informations disponibles pour l'agent au moment où il répond. | La conversation en cours, les instructions du projet et les notes utiles ; pas forcément tout le vault. |
-| **Session** | Une conversation de travail avec un objectif donné. | Elle sert à avancer sur un sujet cohérent, comme le setup ou un projet précis. |
-| **Vault** | Le dossier de notes ouvert dans Obsidian. | Ici, c'est le dossier de ce modèle, également ouvert dans Copilot App. |
-
-### Agent, skill et contexte : l'analogie du bureau
-
-- L'application est le **bureau** dans lequel vous travaillez.
-- L'agent est le **collègue** qui vous aide.
-- Une skill est une **fiche de procédure** que ce collègue sait utiliser pour une tâche particulière.
-- Le contexte est constitué des **documents posés sur le bureau** et de la conversation en cours.
-- La session est la **réunion de travail** consacrée à un sujet.
-
-Une skill n'est pas une note personnelle et ne remplace pas le vault. Elle explique comment réaliser
-une tâche répétitive ou accéder à un outil ; n'activez ou n'installez que les skills dont vous avez
-besoin.
-
-### Pourquoi ne pas tout mettre dans une seule session ?
-
-Une session n'est pas la mémoire permanente du second brain : les notes et les fichiers du vault le
-sont. Une très longue conversation finit par contenir trop de sujets et de détails ; certains
-éléments anciens peuvent être moins disponibles pour l'agent. Cela augmente le risque de :
-
-- mélanger deux projets ou deux casquettes ;
-- appliquer une ancienne décision au mauvais sujet ;
-- modifier le mauvais fichier ;
-- rendre les réponses plus lentes, moins claires et plus coûteuses à relire.
-
-La règle pratique est **une tâche par session** : évitez de tout faire au même endroit. Une session
-doit rester centrée sur un seul objectif cohérent :
-
-Cela optimise le contexte fourni à Copilot App : avec moins de sujets concurrents à distinguer,
-l'agent limite les réponses ou modifications hors sujet, donc les hallucinations. Des sessions plus
-courtes consomment aussi moins de contexte et contribuent à maîtriser les coûts.
-
-- une session pour le premier setup ;
-- une session par projet important ;
-- une session dédiée à une casquette si le sujet est volumineux ;
-- une session pour une revue hebdomadaire ou un traitement groupé de l'Inbox.
-
-Ne mélangez pas dans une même session une question sur un projet, le tri de l'Inbox, une revue
-hebdomadaire et une modification du fonctionnement du système. Ouvrez une nouvelle session dès que
-vous changez de tâche ou de sujet ; cela aide Copilot App à conserver le bon contexte et à éviter
-les modifications au mauvais endroit.
-
-Gardez la même session pour les questions de suivi sur le même sujet. Vous ne perdez pas les règles
-du projet en changeant de session : Copilot App peut relire `config.md`, les instructions et les
-notes pertinentes.
+Vous découvrirez les autres règles, le vocabulaire de Copilot App et le fonctionnement des sessions après l'installation, au moment où ces notions deviennent utiles.
 
 ## 1. Installer et mettre à l'abri
 
@@ -95,9 +26,8 @@ Avant de commencer, prévoyez :
 2. **Obsidian**, à télécharger depuis [obsidian.md](https://obsidian.md/download).
 3. **GitHub Copilot App**, à installer directement depuis notre application interne **Workspace
    One**. N'utilisez pas le site officiel GitHub pour cette installation.
-4. **Google Drive pour ordinateur**, à télécharger depuis
-   [google.com/drive/download](https://www.google.com/drive/download/). C'est votre filet de
-   sécurité : voir l'étape 1.2.
+4. **Google Drive pour ordinateur**, à installer également depuis **Workspace One**. C'est votre
+   filet de sécurité : voir l'étape 1.2.
 
 ### 1.1 Récupérer une copie du modèle
 
@@ -108,7 +38,7 @@ Le modèle vit sur GitHub. Deux façons de le récupérer, aucune ne demande de 
 - **Le plus durable** : cliquez sur **Fork** en haut à droite pour créer votre propre copie sur
   GitHub, installez [GitHub Desktop](https://desktop.github.com/), puis utilisez **Clone
   repository** pour la récupérer sur votre ordinateur. C'est cette voie qui permet de recevoir plus
-  tard les améliorations du modèle (section 11) et de conserver un historique de vos notes.
+  tard les améliorations du modèle (section 12) et de conserver un historique de vos notes.
 
 Renommez le dossier comme vous le souhaitez, par exemple `Second-Brain`.
 
@@ -119,7 +49,8 @@ disque vous le fait perdre en entier.** Google Drive pour ordinateur règle le p
 changer à vos habitudes : le dossier reste un dossier normal sur votre ordinateur, et chaque
 modification part automatiquement dans le cloud.
 
-1. Installez **Google Drive pour ordinateur** et connectez-vous avec votre compte Google.
+1. Ouvrez **Workspace One**, recherchez **Google Drive pour ordinateur** et lancez son installation
+   depuis l'application interne, puis connectez-vous avec votre compte Google.
 2. L'installation ajoute un emplacement **Google Drive** à votre ordinateur : un lecteur (souvent
    `G:`) sous Windows, un dossier `Google Drive` dans le Finder sous macOS. Ouvrez-le, puis entrez
    dans **Mon Drive**.
@@ -208,7 +139,65 @@ encore présents dans config.md.
 
 Si la réponse concerne bien ce dossier et ses règles, l'installation est terminée.
 
-## 4. Comprendre les cinq dossiers
+## 4. Comprendre Copilot App
+
+Vous pouvez commencer à utiliser le système sans mémoriser son vocabulaire. Ces quelques repères deviennent utiles maintenant que les applications sont installées.
+
+### Vocabulaire essentiel
+
+| Terme        | Explication simple                                                   | Dans ce projet                                                                                          |
+| ------------ | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Agent**    | L'assistant qui lit les fichiers, raisonne et réalise votre demande. | Il applique les règles de `.github/copilot-instructions.md` et peut organiser le vault.                 |
+| **Skill**    | Un mode d'emploi spécialisé, parfois accompagné d'outils.            | `.agents/skills/` peut contenir des compétences optionnelles pour Copilot App.                          |
+| **Contexte** | Les informations disponibles pour l'agent au moment où il répond.    | La conversation en cours, les instructions du projet et les notes utiles ; pas forcément tout le vault. |
+| **Session**  | Une conversation de travail avec un objectif donné.                  | Elle sert à avancer sur un sujet cohérent, comme le setup ou un projet précis.                          |
+| **Vault**    | Le dossier de notes ouvert dans Obsidian.                            | Ici, c'est le dossier de ce modèle, également ouvert dans Copilot App.                                  |
+
+### Agent, skill et contexte : l'analogie du bureau
+
+- L'application est le **bureau** dans lequel vous travaillez.
+- L'agent est le **collègue** qui vous aide.
+- Une skill est une **fiche de procédure** que ce collègue sait utiliser pour une tâche particulière.
+- Le contexte est constitué des **documents posés sur le bureau** et de la conversation en cours.
+- La session est la **réunion de travail** consacrée à un sujet.
+
+Une skill n'est pas une note personnelle et ne remplace pas le vault. Elle explique comment réaliser
+une tâche répétitive ou accéder à un outil ; n'activez ou n'installez que les skills dont vous avez
+besoin.
+
+### Pourquoi ne pas tout mettre dans une seule session ?
+
+Une session n'est pas la mémoire permanente du second brain : les notes et les fichiers du vault le
+sont. Une très longue conversation finit par contenir trop de sujets et de détails ; certains
+éléments anciens peuvent être moins disponibles pour l'agent. Cela augmente le risque de :
+
+- mélanger deux projets ou deux casquettes ;
+- appliquer une ancienne décision au mauvais sujet ;
+- modifier le mauvais fichier ;
+- rendre les réponses plus lentes, moins claires et plus coûteuses à relire.
+
+La règle pratique est **une tâche par session** : évitez de tout faire au même endroit. Une session
+doit rester centrée sur un seul objectif cohérent.
+
+Cela optimise le contexte fourni à Copilot App : avec moins de sujets concurrents à distinguer,
+l'agent limite les réponses ou modifications hors sujet, donc les hallucinations. Des sessions plus
+courtes consomment aussi moins de contexte et contribuent à maîtriser les coûts.
+
+- une session pour le premier setup ;
+- une session par projet important ;
+- une session dédiée à une casquette si le sujet est volumineux ;
+- une session pour une revue hebdomadaire ou un traitement groupé de l'Inbox.
+
+Ne mélangez pas dans une même session une question sur un projet, le tri de l'Inbox, une revue
+hebdomadaire et une modification du fonctionnement du système. Ouvrez une nouvelle session dès que
+vous changez de tâche ou de sujet ; cela aide Copilot App à conserver le bon contexte et à éviter
+les modifications au mauvais endroit.
+
+Gardez la même session pour les questions de suivi sur le même sujet. Vous ne perdez pas les règles
+du projet en changeant de session : Copilot App peut relire `config.md`, les instructions et les
+notes pertinentes.
+
+## 5. Comprendre les cinq dossiers
 
 Le classement suit la méthode **IPCRA** :
 
@@ -236,7 +225,7 @@ fonctionnement du système — journal des décisions, routines d'entretien) et 
 des exemples remplis). `docs/` est volontairement invisible pour Copilot App, pour ne pas
 encombrer son contexte à chaque conversation.
 
-## 5. Premier réglage du projet
+## 6. Premier réglage du projet
 
 Effectuez ces étapes dans Copilot App, dans l'ordre. Les prompts sont prêts à copier-coller.
 Ils décrivent uniquement votre intention. Le routage, la lecture de `config.md` et des hubs, le
@@ -301,9 +290,9 @@ Présente les problèmes par ordre d'importance et propose une correction
 pour chacun. Attends mon accord avant toute modification.
 ```
 
-## 6. Utilisation au quotidien
+## 7. Utilisation au quotidien
 
-### 6.1 Capturer une idée manuellement
+### 7.1 Capturer une idée manuellement
 
 Dans Obsidian, créez une nouvelle note **dans `0_Inbox/`**. Donnez-lui un nom simple, par exemple
 `AAAA-MM-JJ-idee-cadeau.md`, puis notez ce que vous avez en tête sans chercher à le classer.
@@ -324,7 +313,7 @@ Texte libre, lien ou prochaine question.
 Si vous ne savez pas comment nommer ou formater la capture, écrivez simplement dans une note de
 `0_Inbox/` et demandez ensuite à Copilot App de la remettre en forme.
 
-### 6.2 Faire qualifier une capture par Copilot App
+### 7.2 Faire qualifier une capture par Copilot App
 
 ```text
 J'ai ajouté la capture 0_Inbox/AAAA-MM-JJ-idee-cadeau.md.
@@ -345,7 +334,7 @@ Applique le classement que nous venons de valider pour
 Effectue la qualification.
 ```
 
-### 6.3 Demander une modification
+### 7.3 Demander une modification
 
 Pour corriger, compléter ou réorganiser une note qui n'est plus dans Inbox, passez toujours par
 Copilot App :
@@ -356,7 +345,7 @@ pour la rendre plus claire et plus courte. Montre-moi la modification
 proposée avant d'écrire dans le fichier.
 ```
 
-### 6.4 Retrouver une information
+### 7.4 Retrouver une information
 
 ```text
 Je cherche ce que nous avons décidé au sujet de [SUJET].
@@ -364,7 +353,7 @@ Donne-moi la réponse.
 Ne modifie aucun fichier.
 ```
 
-### 6.5 Préparer une prochaine action
+### 7.5 Préparer une prochaine action
 
 ```text
 À partir de la note [CHEMIN DU PROJET], donne-moi :
@@ -375,14 +364,14 @@ Ne modifie aucun fichier.
 Ne transforme pas cette analyse en nouvelles notes et ne modifie rien.
 ```
 
-### 6.6 Archiver un projet terminé
+### 7.6 Archiver un projet terminé
 
 ```text
 Le projet [NOM DU PROJET] est terminé.
 Propose son archivage et attends mon accord. Après validation, archive-le
 ```
 
-## 7. Entretien du système
+## 8. Entretien du système
 
 Une fois par semaine, lancez ce prompt dans Copilot App :
 
@@ -396,7 +385,7 @@ Une fois par mois, utilisez :
 Fais la rétro mensuelle du second brain.
 ```
 
-## 8. Règles à retenir
+## 9. Règles à retenir
 
 - **Inbox = capture manuelle.** Si vous hésitez, capturez là.
 - **Copilot App = organisation et écriture du dépôt.** Même une petite correction dans un projet ou
@@ -413,7 +402,7 @@ Fais la rétro mensuelle du second brain.
   il est marqué *Disponible hors connexion*. Vérifiez-le de temps en temps — l'icône de Google
   Drive dans la barre des tâches doit indiquer que tout est synchronisé.
 
-## 9. En cas de problème
+## 10. En cas de problème
 
 ### Copilot App ne voit pas mes notes
 
@@ -467,7 +456,7 @@ Le vault contient des fichiers en double créés par la synchronisation
 dis-moi lequel garder, et attends mon accord avant de supprimer quoi que ce soit.
 ```
 
-## 10. Repères pour aller plus loin
+## 11. Repères pour aller plus loin
 
 - `config.md` contient vos préférences personnelles et votre périmètre sensible.
 - `.github/copilot-instructions.md` contient les règles de travail de Copilot App.
@@ -482,7 +471,7 @@ dis-moi lequel garder, et attends mon accord avant de supprimer quoi que ce soit
 Le modèle utilise du Markdown lisible, mais vous n'avez pas besoin d'en connaître la syntaxe :
 demandez à Copilot App de créer ou de modifier les notes en respectant les règles du système.
 
-## 11. Recevoir les améliorations du modèle
+## 12. Recevoir les améliorations du modèle
 
 Cette section ne concerne que ceux qui ont **forké** le modèle (étape 1.1, seconde option). Si vous
 avez téléchargé un ZIP, votre copie est indépendante : il n'y a rien à synchroniser, et vous pouvez

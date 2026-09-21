@@ -213,6 +213,14 @@ directement depuis l'application interne **Workspace One**, et non depuis le sit
 **Effet** — Les prérequis et l'étape d'installation du tutoriel renvoient tous deux vers
 Workspace One, afin d'éviter un parcours d'installation incohérent.
 
+### 2026-09-21 — décision — Source d'installation de Google Drive
+
+**Décision** — Google Drive pour ordinateur doit également être installé depuis l'application
+interne **Workspace One**, et non depuis le site officiel Google.
+
+**Effet** — Le README et le tutoriel présentent désormais une procédure d'installation cohérente
+pour les deux applications distribuées par Workspace One.
+
 ### 2026-09-21 — décision — Une tâche par session dans le tutoriel
 
 **Décision** — Le tutoriel demande de consacrer chaque session à une seule tâche ou à un objectif
@@ -229,3 +237,24 @@ demande de l'utilisateur.
 
 **Effet** — Les références actives à cette skill sont supprimées du socle, de la configuration, du
 README et du tutoriel. Les mentions historiques antérieures dans ce journal sont conservées.
+
+### 2026-09-21 — décision — Installation avant les repères Copilot App
+
+**Décision** — Le tutoriel présente désormais l'installation et l'ouverture des applications avant
+le vocabulaire, l'analogie agent/skill/contexte et les règles de session. Il ne garde au début qu'un
+rappel opérationnel minimal : les captures manuelles vont dans `0_Inbox/` et les autres
+modifications passent par Copilot App. Les repères restent dans `docs/TUTORIEL.md`, plutôt que dans
+un dossier séparé.
+
+**Effet** — Le parcours réduit la charge cognitive au démarrage, puis introduit les notions au
+moment où elles deviennent utiles. Les sections suivantes ont été renumérotées et leurs renvois
+internes corrigés.
+
+### 2026-09-21 — friction — Retours à la ligne visibles dans le tutoriel
+
+**Constat** — Des paragraphes du tutoriel étaient coupés par des retours à la ligne manuels. Dans
+l'éditeur d'Obsidian, ces coupures apparaissaient comme des sauts de ligne inattendus, alors qu'elles
+n'étaient pas de nouvelles sections.
+
+**Correction** — Les paragraphes concernés ont été réunis sur une seule ligne source afin de préserver
+leur affichage continu.

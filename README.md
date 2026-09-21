@@ -23,7 +23,7 @@ Le classement suit cinq dossiers : `0_Inbox` (capture brute) · `1_Projets` (ave
 réglage, usage au quotidien et dépannage, avec des prompts prêts à copier-coller.
 
 Prérequis : un compte GitHub avec accès à Copilot, [Obsidian](https://obsidian.md/download),
-GitHub Copilot App, et [Google Drive pour ordinateur](https://www.google.com/drive/download/) —
+GitHub Copilot App et Google Drive pour ordinateur, à installer tous deux depuis **Workspace One** —
 le second brain s'installe dans *Mon Drive*, en mode hors connexion, pour être sauvegardé sans
 rien changer à vos habitudes. Le tutoriel détaille ce réglage, qui n'est pas optionnel.
 

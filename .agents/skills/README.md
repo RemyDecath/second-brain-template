@@ -1,3 +1,6 @@
+---
+created_date: 2026-09-19 20:53:34
+---
 # Skills
 
 Une skill est un mode d'emploi outillé, écrit pour l'agent, quand une tâche redevient récurrente.
