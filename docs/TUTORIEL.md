@@ -66,7 +66,7 @@ Le dossier doit maintenant rester à cet emplacement. Obsidian et Copilot App de
 
 1. Installez puis ouvrez Obsidian.
 2. Choisissez **Ouvrir un dossier comme vault existant** (le libellé peut varier légèrement selon votre version).
-3. Sélectionnez le dossier qui contient `README.md`, `config.md`, `0_Inbox/`, `1_Projets/` et les autres dossiers principaux.
+3. Sélectionnez votre dossier second-brain
 4. Vérifiez que l'arborescence du vault apparaît bien à gauche.
 
 Aucun plugin supplémentaire n'est nécessaire pour commencer : le modèle fonctionne avec Obsidian tel qu'il s'installe. Vos réglages Obsidian (thème, raccourcis, plugins) restent propres à votre ordinateur et ne sont pas partagés avec le modèle. Si Obsidian demande si vous faites confiance à ce vault, acceptez uniquement si le dossier provient bien de la source attendue.
@@ -85,7 +85,7 @@ Pour toute autre écriture, fermez l'édition dans Obsidian et demandez la modif
 1. Ouvrez **Workspace One**, recherchez **GitHub Copilot App** et lancez son installation depuis l'application interne. N'utilisez pas le site officiel GitHub.
 2. Ouvrez GitHub Copilot App et connectez-vous avec votre compte GitHub.
 3. Ouvrez ou ajoutez un projet à partir du **même dossier local** que celui choisi dans Obsidian. Si le modèle est fourni depuis GitHub, utilisez l'option de l'application permettant d'ouvrir ou de récupérer le dépôt ; s'il est déjà sur votre ordinateur, choisissez ce dossier existant.
-4. Ouvrez une conversation dans ce projet et vérifiez que Copilot App voit `README.md` et `config.md`.
+4. Ouvrez une conversation dans ce projet
 5. Dans le sélecteur de modèle, choisissez **GPT-5.6 Luna** et réglez le raisonnement sur **Médium**. Faites de ce réglage votre valeur par défaut pour éviter une surconsommation de facturation ; ne sélectionnez un niveau supérieur que pour une demande exceptionnellement complexe.
 
 Le fichier `.github/copilot-instructions.md` indique automatiquement à Copilot App comment travailler dans ce second brain. Vous n'avez normalement pas besoin de le lire ou de le modifier.
@@ -116,6 +116,7 @@ Vous pouvez commencer à utiliser le système sans mémoriser son vocabulaire. C
 | **Contexte** | Les informations disponibles pour l'agent au moment où il répond.    | La conversation en cours, les instructions du projet et les notes utiles ; pas forcément tout le vault. |
 | **Session**  | Une conversation de travail avec un objectif donné.                  | Elle sert à avancer sur un sujet cohérent, comme le setup ou un projet précis.                          |
 | **Vault**    | Le dossier de notes ouvert dans Obsidian.                            | Ici, c'est le dossier de ce modèle, également ouvert dans Copilot App.                                  |
+| **Plafond**  | Une limite de taille qui aide à garder les fichiers lisibles et le contexte maîtrisé. | Dans `config.md` §5, vous indiquez le nombre maximal de lignes pour certains fichiers ; Copilot App signale quand une limite est atteinte. |
 
 ### Agent, skill et contexte : l'analogie du bureau
 
