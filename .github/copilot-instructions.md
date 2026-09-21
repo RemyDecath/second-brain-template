@@ -1,6 +1,6 @@
 ---
 description: Socle de règles de travail de l'agent dans ce second brain — lu à chaque session.
-created_date: 2026-09-18
+created_date: 2026-09-19 20:53:34
 ---
 # Instructions Copilot — Second Brain
 

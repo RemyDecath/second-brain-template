@@ -1,6 +1,6 @@
 ---
 description: Modèle de second brain personnel, piloté par un agent IA depuis Obsidian et Copilot App.
-created_date: 2026-09-18
+created_date: 2026-09-19 20:53:34
 ---
 
 # Second Brain — modèle prêt à l'emploi

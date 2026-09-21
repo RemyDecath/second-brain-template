@@ -23,6 +23,13 @@ repose sur deux applications qui ont des rôles différents :
 
 Cette règle évite que l'organisation du vault et les instructions de l'assistant se contredisent.
 
+> **Réglage recommandé pour maîtriser la facturation**
+>
+> Dans Copilot App, utilisez le modèle **GPT-5.6 Luna** avec le niveau de raisonnement
+> **Médium** par défaut. C'est le réglage conseillé pour ce second brain : il offre un bon
+> équilibre entre qualité et coût. N'augmentez le niveau de raisonnement ou ne changez de modèle
+> que si une tâche le justifie réellement, puis revenez à ce réglage.
+
 ## Vocabulaire essentiel
 
 Quelques mots reviennent souvent dans Copilot App. Les comprendre aide à obtenir de meilleures
@@ -169,6 +176,10 @@ Pour toute autre écriture, fermez l'édition dans Obsidian et demandez la modif
    de récupérer le dépôt ; s'il est déjà sur votre ordinateur, choisissez ce dossier existant.
 4. Ouvrez une conversation dans ce projet et vérifiez que Copilot App voit `README.md` et
    `config.md`.
+5. Dans le sélecteur de modèle, choisissez **GPT-5.6 Luna** et réglez le raisonnement sur
+   **Médium**. Faites de ce réglage votre valeur par défaut pour éviter une surconsommation de
+   facturation ; ne sélectionnez un niveau supérieur que pour une demande exceptionnellement
+   complexe.
 
 Le fichier `.github/copilot-instructions.md` indique automatiquement à Copilot App comment travailler
 dans ce second brain. Vous n'avez normalement pas besoin de le lire ou de le modifier.
@@ -379,6 +390,8 @@ Fais la rétro mensuelle du second brain.
 - **Inbox = capture manuelle.** Si vous hésitez, capturez là.
 - **Copilot App = organisation et écriture du dépôt.** Même une petite correction dans un projet ou
   une ressource doit passer par l'application.
+- **Modèle et coût : GPT-5.6 Luna + raisonnement Médium par défaut.** Vérifiez ce réglage au début
+  d'une nouvelle session et n'augmentez le raisonnement que lorsque la tâche le nécessite.
 - **Obsidian = lecture, navigation et capture.** N'éditez pas directement les autres dossiers.
 - **`4_Archives/` n'est pas relu automatiquement par Copilot App** : demandez explicitement la
   réactivation d'un élément archivé.

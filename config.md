@@ -1,6 +1,6 @@
 ---
 description: Configuration personnelle du second brain — à remplir après clonage.
-created_date: 2026-09-18
+created_date: 2026-09-19 20:53:34
 ---
 
 # Configuration
