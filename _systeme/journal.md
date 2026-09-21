@@ -212,3 +212,12 @@ directement depuis l'application interne **Workspace One**, et non depuis le sit
 
 **Effet** — Les prérequis et l'étape d'installation du tutoriel renvoient tous deux vers
 Workspace One, afin d'éviter un parcours d'installation incohérent.
+
+### 2026-09-21 — décision — Une tâche par session dans le tutoriel
+
+**Décision** — Le tutoriel demande de consacrer chaque session à une seule tâche ou à un objectif
+cohérent, et d'ouvrir une nouvelle session dès que le sujet change.
+
+**Effet** — Le tutoriel déconseille explicitement de mélanger plusieurs activités sans rapport dans
+la même session, afin d'optimiser le contexte, de limiter les hallucinations et de maîtriser les
+coûts, tout en réduisant les risques de modification au mauvais endroit.

@@ -66,17 +66,26 @@ sont. Une très longue conversation finit par contenir trop de sujets et de dét
 - modifier le mauvais fichier ;
 - rendre les réponses plus lentes, moins claires et plus coûteuses à relire.
 
-La bonne règle est **une session par objectif cohérent** :
+La règle pratique est **une tâche par session** : évitez de tout faire au même endroit. Une session
+doit rester centrée sur un seul objectif cohérent :
+
+Cela optimise le contexte fourni à Copilot App : avec moins de sujets concurrents à distinguer,
+l'agent limite les réponses ou modifications hors sujet, donc les hallucinations. Des sessions plus
+courtes consomment aussi moins de contexte et contribuent à maîtriser les coûts.
 
 - une session pour le premier setup ;
 - une session par projet important ;
 - une session dédiée à une casquette si le sujet est volumineux ;
 - une session pour une revue hebdomadaire ou un traitement groupé de l'Inbox.
 
-Gardez la même session pour les questions de suivi sur le même sujet. Démarrez-en une nouvelle
-lorsque vous changez de projet, de casquette ou de type de tâche. Vous ne perdez pas les règles du
-projet en changeant de session : Copilot App peut relire `config.md`, les instructions et les notes
-pertinentes.
+Ne mélangez pas dans une même session une question sur un projet, le tri de l'Inbox, une revue
+hebdomadaire et une modification du fonctionnement du système. Ouvrez une nouvelle session dès que
+vous changez de tâche ou de sujet ; cela aide Copilot App à conserver le bon contexte et à éviter
+les modifications au mauvais endroit.
+
+Gardez la même session pour les questions de suivi sur le même sujet. Vous ne perdez pas les règles
+du projet en changeant de session : Copilot App peut relire `config.md`, les instructions et les
+notes pertinentes.
 
 ## 1. Installer et mettre à l'abri
 
