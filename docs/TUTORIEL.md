@@ -90,7 +90,7 @@ Pour toute autre écriture, fermez l'édition dans Obsidian et demandez la modif
 1. Ouvrez **Workspace One**, recherchez **GitHub Copilot App** et lancez son installation depuis l'application interne. N'utilisez pas le site officiel GitHub.
 2. Ouvrez GitHub Copilot App et connectez-vous avec votre compte GitHub.
 3. Ouvrez ou ajoutez un projet à partir du **même dossier local** que celui choisi dans Obsidian. Si le modèle est fourni depuis GitHub, utilisez l'option de l'application permettant d'ouvrir ou de récupérer le dépôt ; s'il est déjà sur votre ordinateur, choisissez ce dossier existant.
-4. Ouvrez une conversation dans ce projet
+4. Ouvrez une conversation dans ce projet.
 5. Dans le sélecteur de modèle, choisissez **GPT-5.6 Luna** et réglez le raisonnement sur **Médium**. Faites de ce réglage votre valeur par défaut pour éviter une surconsommation de facturation ; ne sélectionnez un niveau supérieur que pour une demande exceptionnellement complexe.
 
 Le fichier `.github/copilot-instructions.md` indique automatiquement à Copilot App comment travailler dans ce second brain. Vous n'avez normalement pas besoin de le lire ou de le modifier.
@@ -118,6 +118,8 @@ Vous pouvez commencer à utiliser le système sans mémoriser son vocabulaire. C
 | ------------ | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | **Agent**    | L'assistant qui lit les fichiers, raisonne et réalise votre demande. | Il applique les règles de `.github/copilot-instructions.md` et peut organiser le vault.                 |
 | **Skill**    | Un mode d'emploi spécialisé, parfois accompagné d'outils.            | `.agents/skills/` peut contenir des compétences optionnelles pour Copilot App.                          |
+| **MCP**      | Le protocole qui relie l'agent à des outils ou sources externes via des serveurs spécialisés. | Le framework interne de MCP de l'entreprise peut être ajouté lors de la configuration du SDLC. |
+| **SDLC**     | Le cadre de travail qui intègre l'IA au cycle de développement logiciel. | Le Decathlon AI Augmented SDLC s'installe et s'ouvre dans chaque projet selon sa documentation officielle. |
 | **Contexte** | Les informations disponibles pour l'agent au moment où il répond.    | La conversation en cours, les instructions du projet et les notes utiles ; pas forcément tout le vault. |
 | **Session**  | Une conversation de travail avec un objectif donné.                  | Elle sert à avancer sur un sujet cohérent, comme le setup ou un projet précis.                          |
 | **Vault**    | Le dossier de notes ouvert dans Obsidian.                            | Ici, c'est le dossier de ce modèle, également ouvert dans Copilot App.                                  |
@@ -221,7 +223,15 @@ Propose les fichiers à créer et le contenu prévu, puis attends mon accord.
 Après validation, crée ma casquette.
 ```
 
-### Étape 4 — Créer le premier projet
+### Étape 4 — Installer et ouvrir le SDLC
+
+1. Installez le **Decathlon AI Augmented SDLC** en suivant le [tutoriel officiel d'installation](https://ai-augmented-development.decathlon.net/docs/ai-augmented-sdlc/tutorials/install).
+2. Ajoutez le framework interne de **skills** et de **MCP** de l'entreprise lors de la configuration.
+3. Pour l'ouvrir dans ce projet, suivez le [tutoriel officiel de démarrage](https://ai-augmented-development.decathlon.net/docs/ai-augmented-sdlc/tutorials/getting-started).
+
+### Étape 5 — Créer un projet (facultatif)
+
+Cette étape est facultative : vous pouvez utiliser le second brain sans créer de projet immédiatement.
 
 ```text
 Crée un projet « [NOM DU PROJET] » dans 1_Projets/.
@@ -232,7 +242,7 @@ Propose d'abord la structure et les informations manquantes.
 Après mon accord, crée ce projet.
 ```
 
-### Étape 5 — Faire un contrôle de départ
+### Étape 6 — Faire un contrôle de départ
 
 ```text
 Fais un contrôle de démarrage du second brain sans modifier de fichier.
