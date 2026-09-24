@@ -21,8 +21,8 @@ inactive).
 
 ## Getting started
 
-The full tutorial is currently in French: [docs/TUTORIEL.md](docs/TUTORIEL.md). It covers setup,
-first-time configuration, daily use, and troubleshooting.
+Follow the [full installation and usage tutorial in English](docs/TUTORIEL.en.md). The
+[French version](docs/TUTORIEL.md) is also available.
 
 To use the template in English, set the language in **§3 of `config.md`** to `English`. You can also
 ask Copilot:

@@ -23,6 +23,7 @@ Le classement suit cinq dossiers : `0_Inbox` (capture brute) · `1_Projets` (ave
 
 **➜ [Le tutoriel complet est dans `docs/TUTORIEL.md`](docs/TUTORIEL.md)** — installation, premier
 réglage, usage au quotidien et dépannage, avec des prompts prêts à copier-coller.
+**[English version: full tutorial](docs/TUTORIEL.en.md)**
 
 Prérequis : un compte GitHub avec accès à Copilot, [Obsidian](https://obsidian.md/download),
 GitHub Copilot App et Google Drive pour ordinateur, à installer tous deux depuis **Workspace One** —

@@ -4,6 +4,8 @@ created_date: 2026-09-18 16:44:11
 ---
 # Tutoriel — Second Brain avec Obsidian et Copilot App
 
+[English version](TUTORIEL.en.md)
+
 Ce dossier est un **second brain personnel prêt à l'emploi** : un endroit pour capturer ce qui vous passe par la tête, retrouver vos informations et faire avancer vos projets.
 
 Vous n'avez pas besoin de savoir coder, d'utiliser un terminal ou de connaître Markdown. Le système repose sur deux applications qui ont des rôles différents :
@@ -36,7 +38,7 @@ Prévoyez également :
 Le modèle vit sur GitHub. Deux façons de le récupérer, aucune ne demande de savoir coder :
 
 - **Le plus simple** : sur la page GitHub du modèle, bouton vert **Code**, puis **Download ZIP**. Décompressez l'archive, vous obtenez un dossier prêt à l'emploi.
-- **Le plus durable** : cliquez sur **Fork** en haut à droite pour créer votre propre copie sur GitHub, installez [GitHub Desktop](https://desktop.github.com/), puis utilisez **Clone repository** pour la récupérer sur votre ordinateur. C'est cette voie qui permet de recevoir plus tard les améliorations du modèle (section 12) et de conserver un historique de vos notes.
+- **Le plus durable** : cliquez sur **Fork** en haut à droite pour créer votre propre copie sur GitHub, installez [GitHub Desktop](https://desktop.github.com/), puis utilisez **Clone repository** pour la récupérer sur votre ordinateur. C'est cette voie qui permet de recevoir plus tard les améliorations du modèle et de conserver un historique de vos notes.
 
 Renommez le dossier comme vous le souhaitez, par exemple `Second-Brain`.
 
@@ -202,6 +204,9 @@ Aide-moi à personnaliser config.md. Pose-moi les questions une par une
 pour renseigner mon prénom, mon rôle, mon contexte, mes 2 à 4 casquettes,
 ma langue, mon ton, mes conventions de nommage, mes plafonds, mon périmètre
 sensible et les outils externes que j'utilise.
+
+Utilise ma langue pour tes réponses et les nouvelles notes. Ne renomme pas
+les dossiers ou fichiers et ne traduis pas les notes existantes sans ma demande.
 
 Ne devine aucune information et ne mets aucune donnée sensible dans le fichier.
 Quand j'ai répondu, montre-moi un résumé complet des informations recueillies
