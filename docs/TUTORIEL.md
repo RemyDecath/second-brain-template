@@ -100,7 +100,7 @@ Le fichier `.github/copilot-instructions.md` indique automatiquement à Copilot 
 Copiez ce prompt dans Copilot App :
 
 ```text
-Je viens d'ouvrir le second brain. Ne modifie aucun fichier pour l'instant.
+Je viens d'ouvrir le second brain.
 Explique-moi brièvement le rôle de chaque dossier et rappelle-moi la règle
 concernant les modifications manuelles. Signale les éventuels placeholders
 encore présents dans config.md.
@@ -183,7 +183,7 @@ Deux autres dossiers existent, que vous n'avez pas à alimenter vous-même : `_s
 
 ## 6. Premier réglage du projet
 
-Effectuez ces étapes dans Copilot App, dans l'ordre. Les prompts sont prêts à copier-coller. Ils décrivent uniquement votre intention. Le routage, la lecture de `config.md` et des hubs, le respect du pattern, le frontmatter, la mise à jour des Registry Rapide et la cohérence des liens sont des règles natives du système : vous n'avez pas à les répéter.
+Effectuez ces étapes dans Copilot App, dans l'ordre. Les prompts sont prêts à copier-coller et expriment votre intention. Les règles de fonctionnement du projet, y compris celles qui encadrent les modifications, sont définies dans sa configuration : inutile de les répéter. Le routage, la lecture de `config.md` et des hubs, le respect du pattern, le frontmatter, la mise à jour des Registry Rapide et la cohérence des liens sont gérés automatiquement.
 
 ### Étape 1 — Faire expliquer le système
 
@@ -193,7 +193,6 @@ Explique-moi le fonctionnement avec des mots simples :
 1. ce que je fais dans Obsidian ;
 2. ce que je fais dans Copilot App ;
 3. comment une note passe de 0_Inbox à son emplacement définitif.
-Ne modifie aucun fichier pour cette explication.
 ```
 
 ### Étape 2 — Personnaliser `config.md`
@@ -205,8 +204,8 @@ ma langue, mon ton, mes conventions de nommage, mes plafonds, mon périmètre
 sensible et les outils externes que j'utilise.
 
 Ne devine aucune information et ne mets aucune donnée sensible dans le fichier.
-Quand j'ai répondu, montre-moi un résumé complet et demande mon accord avant
-d'écrire dans config.md.
+Quand j'ai répondu, montre-moi un résumé complet des informations recueillies
+et demande mon accord avant de mettre à jour config.md.
 ```
 
 ### Étape 3 — Créer la première casquette
@@ -226,10 +225,24 @@ Après validation, crée ma casquette.
 ### Étape 4 — Installer et ouvrir le SDLC
 
 1. Installez le **Decathlon AI Augmented SDLC** en suivant le [tutoriel officiel d'installation](https://ai-augmented-development.decathlon.net/docs/ai-augmented-sdlc/tutorials/install).
-2. Ajoutez le framework interne de **skills** et de **MCP** de l'entreprise lors de la configuration.
-3. Pour l'ouvrir dans ce projet, suivez le [tutoriel officiel de démarrage](https://ai-augmented-development.decathlon.net/docs/ai-augmented-sdlc/tutorials/getting-started).
+2. Pour l'ouvrir dans ce projet, suivez le [tutoriel officiel de démarrage](https://ai-augmented-development.decathlon.net/docs/ai-augmented-sdlc/tutorials/getting-started).
 
-### Étape 5 — Créer un projet (facultatif)
+Dans le canvas, le bouton **Setup project environment** est facultatif et alourdit fortement le projet. Utilisez-le si vous souhaitez la méthode **BMAD** ; sinon, vous pouvez vous en passer. Vous pouvez installer individuellement des MCP et des skills depuis leurs onglets pour n'ajouter que ceux dont vous avez besoin.
+
+### Étape 5 — Installer un premier MCP
+
+1. Si le canvas n'est pas déjà ouvert, envoyez `Open ai augmented` dans Copilot App.
+2. Dans l'onglet **MCP**, installez **Atlassian — Jira / Confluence**.
+3. Dans une conversation du projet, annoncez l'installation et indiquez à quoi le MCP doit servir, par exemple :
+
+```text
+J'ai installé le MCP Atlassian — Jira / Confluence. Utilise-le pour
+[CAS D'USAGE].
+```
+
+Cette annonce déclenche la mise à jour de `config.md` §7. Si le périmètre de lecture ou d'action n'est pas établi par les informations disponibles, Copilot App vous demandera de le préciser.
+
+### Étape 6 — Créer un projet (facultatif)
 
 Cette étape est facultative : vous pouvez utiliser le second brain sans créer de projet immédiatement.
 
@@ -238,16 +251,7 @@ Crée un projet « [NOM DU PROJET] » dans 1_Projets/.
 Objectif : [OBJECTIF].
 Date ou période de fin prévue : [DATE OU PÉRIODE].
 
-Propose d'abord la structure et les informations manquantes.
-Après mon accord, crée ce projet.
-```
-
-### Étape 6 — Faire un contrôle de départ
-
-```text
-Fais un contrôle de démarrage du second brain sans modifier de fichier.
-Présente les problèmes par ordre d'importance et propose une correction
-pour chacun. Attends mon accord avant toute modification.
+Demande-moi les informations manquantes, puis crée le projet.
 ```
 
 ## 7. Utilisation au quotidien
@@ -280,16 +284,13 @@ Lis-la et propose :
    dans Inbox ;
 2. le nom et le chemin de la note cible ;
 3. les éventuelles informations manquantes.
-
-Ne déplace, ne renomme et ne modifie aucun fichier avant mon accord.
 ```
 
-Après avoir validé la proposition :
+Pour mettre en œuvre le classement retenu :
 
 ```text
-Applique le classement que nous venons de valider pour
+Applique le classement retenu à
 0_Inbox/AAAA-MM-JJ-idee-cadeau.md.
-Effectue la qualification.
 ```
 
 ### 7.3 Demander une modification
@@ -298,8 +299,7 @@ Pour corriger, compléter ou réorganiser une note qui n'est plus dans Inbox, pa
 
 ```text
 Dans la note [CHEMIN OU NOM DE LA NOTE], reformule la section [NOM DE LA SECTION]
-pour la rendre plus claire et plus courte. Montre-moi la modification
-proposée avant d'écrire dans le fichier.
+pour la rendre plus claire et plus courte.
 ```
 
 ### 7.4 Retrouver une information
@@ -307,7 +307,6 @@ proposée avant d'écrire dans le fichier.
 ```text
 Je cherche ce que nous avons décidé au sujet de [SUJET].
 Donne-moi la réponse.
-Ne modifie aucun fichier.
 ```
 
 ### 7.5 Préparer une prochaine action
@@ -318,14 +317,13 @@ Ne modifie aucun fichier.
 - les points bloquants ;
 - les trois prochaines actions utiles ;
 - les questions auxquelles je dois répondre.
-Ne transforme pas cette analyse en nouvelles notes et ne modifie rien.
 ```
 
 ### 7.6 Archiver un projet terminé
 
 ```text
 Le projet [NOM DU PROJET] est terminé.
-Propose son archivage et attends mon accord. Après validation, archive-le
+Archive-le.
 ```
 
 ## 8. Entretien du système
@@ -368,8 +366,7 @@ Demandez à Obsidian de recharger le vault ou fermez puis rouvrez le vault. Vér
 Ne le faites pas dans Obsidian. Copiez votre demande dans Copilot App, par exemple :
 
 ```text
-Modifie la note [CHEMIN] pour [OBJECTIF]. Montre-moi d'abord les changements
-prévus, puis applique-les uniquement après ma confirmation.
+Modifie la note [CHEMIN] pour [OBJECTIF], en respectant les règles du projet.
 ```
 
 ### J'ai déjà modifié une note à la main, en dehors de `0_Inbox/`
@@ -380,7 +377,7 @@ Cela arrive et ce n'est pas grave. Le risque n'est pas la modification elle-mêm
 J'ai modifié à la main la note [CHEMIN], en dehors de 0_Inbox.
 Vérifie ce que cette modification a pu casser : frontmatter, Registry Rapide,
 wikilinks, plafond de la note. Présente les problèmes et propose une correction
-pour chacun. N'écris rien avant mon accord.
+pour chacun.
 ```
 
 Si la note est vraiment abîmée, Google Drive conserve ses versions précédentes : clic droit sur le fichier dans l'emplacement Google Drive, puis **Gérer les versions**.
@@ -396,7 +393,7 @@ Deux ordinateurs ont travaillé sur le même second brain en même temps. Fermez
 ```text
 Le vault contient des fichiers en double créés par la synchronisation
 (noms du type « ... (1).md »). Compare chaque doublon à l'original,
-dis-moi lequel garder, et attends mon accord avant de supprimer quoi que ce soit.
+dis-moi lequel garder.
 ```
 
 ## 11. Repères pour aller plus loin

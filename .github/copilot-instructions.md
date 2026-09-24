@@ -103,6 +103,8 @@ En reformulant, conserve frontmatter, dates, faits, sources et wikilinks ; ne ch
 
 Un fait a un seul domicile : ne recopie pas le contenu d'une note dans une autre, mets un wikilink.
 
+Quand l'utilisateur annonce l'installation d'un nouvel outil externe ou MCP, ou que le contexte signale explicitement son ajout au projet, mets à jour `config.md §7` dans la même opération, sans attendre une demande distincte. Ajoute ou complète une ligne avec le nom et les capacités confirmées par les informations disponibles. Ne déduis pas les autorisations de l'utilisateur à partir des capacités techniques : si le périmètre de lecture ou d'action n'est pas précisé, indique `à préciser` dans les champs concernés et demande les précisions. Ne crée pas de doublon ; remplace les mentions `à préciser` après clarification. Les skills seuls ne sont pas des outils externes à inscrire dans ce tableau.
+
 ## 9. Inbox et TEMP
 
 Toute capture brute entre par `0_Inbox/` ; `0_Inbox/TEMP/` est jetable, vidé après traitement. Une
