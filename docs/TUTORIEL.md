@@ -179,7 +179,7 @@ Le classement suit la méthode **IPCRA** :
 
 En cas de doute, mettez la capture dans `0_Inbox/` et laissez Copilot App vous proposer le classement.
 
-Deux autres dossiers existent, que vous n'avez pas à alimenter vous-même : `_systeme/` (le fonctionnement du système — journal des décisions, routines d'entretien) et `docs/` (ce tutoriel et des exemples remplis). `docs/` est volontairement invisible pour Copilot App, pour ne pas encombrer son contexte à chaque conversation.
+Deux autres dossiers existent, que vous n'avez pas à alimenter vous-même : `_systeme/` (le fonctionnement du système — journal des décisions, routines d'entretien) et `docs/` (ce tutoriel). `docs/` est volontairement invisible pour Copilot App, pour ne pas encombrer son contexte à chaque conversation.
 
 ## 6. Premier réglage du projet
 
@@ -401,31 +401,8 @@ dis-moi lequel garder.
 - `config.md` contient vos préférences personnelles et votre périmètre sensible.
 - `.github/copilot-instructions.md` contient les règles de travail de Copilot App.
 - `3_Ressources/Pattern_Extensibilite/Pattern_Extensibilite.md` explique comment créer une nouvelle branche ou une nouvelle note.
-- `docs/exemples/` contient un projet et une casquette entièrement remplis, à lire comme modèles.
 - `_systeme/routines.md` décrit l'entretien hebdomadaire et la rétro mensuelle.
 - `_systeme/_systeme.md` est le point d'entrée du dossier système.
 - Le dossier `.agents/skills/` peut contenir des compétences optionnelles pour Copilot App. Elles ne sont pas nécessaires pour commencer.
 
 Le modèle utilise du Markdown lisible, mais vous n'avez pas besoin d'en connaître la syntaxe : demandez à Copilot App de créer ou de modifier les notes en respectant les règles du système.
-
-## 12. Recevoir les améliorations du modèle
-
-Cette section ne concerne que ceux qui ont **forké** le modèle (étape 1.1, seconde option). Si vous avez téléchargé un ZIP, votre copie est indépendante : il n'y a rien à synchroniser, et vous pouvez ignorer cette section.
-
-Le modèle continue d'évoluer : règles affinées, routines améliorées, corrections. Ces changements ne touchent que les fichiers du socle — `.github/copilot-instructions.md`, `docs/`, `3_Ressources/Pattern_Extensibilite/`, `_systeme/routines.md` — **jamais vos notes**.
-
-Pour les récupérer :
-
-1. Ouvrez votre fork sur GitHub.
-2. Si un bandeau indique que votre branche est en retard sur le modèle d'origine, cliquez sur **Sync fork**, puis **Update branch**.
-3. Dans GitHub Desktop, cliquez sur **Pull origin** pour rapatrier la mise à jour sur votre ordinateur.
-
-Si GitHub refuse la synchronisation en signalant un conflit, c'est que vous avez modifié l'un des fichiers du socle de votre côté. Ne tentez pas de trancher à la main :
-
-```text
-La synchronisation avec le modèle d'origine signale un conflit.
-Explique-moi quels fichiers sont concernés, ce que le modèle propose de changer,
-et ce que je perdrais dans chaque cas. Attends mon arbitrage avant toute écriture.
-```
-
-Avant toute mise à jour, vérifiez que Google Drive a fini de synchroniser : vous disposez ainsi d'une version antérieure récupérable si le résultat ne vous convient pas.
