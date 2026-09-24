@@ -5,9 +5,11 @@ created_date: 2026-09-19 20:53:34
 
 # Second Brain — modèle prêt à l'emploi
 
+⚠️ [English version](README.en.md)
+
 Un endroit pour capturer ce qui vous passe par la tête, retrouver vos informations et faire avancer
-vos projets. **Aucune compétence technique requise** : vous écrivez en français, l'agent s'occupe
-des fichiers.
+vos projets. **Aucune compétence technique requise** : vous échangez dans la langue indiquée dans
+`config.md`, l'agent s'occupe des fichiers.
 
 Deux applications, deux rôles :
 
